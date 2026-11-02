@@ -4,337 +4,80 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Capodanno 2026/2027 – Confronto 12 Case & Ville (Como, Svizzera, Italia & Francia)</title>
-  <meta name="description" content="Confronto interattivo delle 12 case per Capodanno 2026/2027 (31 Dic – 2 Gen): 4 a Como e 8 tra Svizzera, Italia e Francia. Calcolo automatico per 10 persone (o capienza struttura) e 3 auto da Torino con caselli e Vignetta Svizzera." />
+  <meta name="description" content="Confronto interattivo delle 12 case per Capodanno 2026/2027 (31 Dic – 2 Gen): 4 a Como e 8 tra Svizzera, Italia e Francia." />
   <meta name="theme-color" content="#1e1b4b" />
-
-  <!-- FAVICON E ICONA TAB BROWSER / SMARTPHONE ("Immaginina" Icona Sito) -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%231e1b4b'/%3E%3Cstop offset='55%25' stop-color='%234338ca'/%3E%3Cstop offset='100%25' stop-color='%23e11d48'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='120' height='120' rx='28' fill='url(%23g)'/%3E%3Cpath d='M25 62 L60 30 L95 62' stroke='%23ffffff' stroke-width='8' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3Cpath d='M36 56 V92 H84 V56' stroke='%23ffffff' stroke-width='8' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3Crect x='52' y='68' width='16' height='24' rx='4' fill='%23fbbf24'/%3E%3Ccircle cx='92' cy='28' r='10' fill='%23fbbf24'/%3E%3C/svg%3E" />
-  <link rel="apple-touch-icon" href="https://placehold.co/180x180/1e1b4b/ffffff.png?text=2027" />
-
-  <!-- OPEN GRAPH / WHATSAPP / TELEGRAM / IMESSAGE PREVIEW ("Immaginina del Sito" 1200x630) -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Capodanno 2026/2027 • Gruppo Torino" />
-  <meta property="og:locale" content="it_IT" />
-  <meta property="og:title" content="🎆 Capodanno 2026/2027 – Confronto 12 Case & Ville" />
-  <meta property="og:description" content="📍 4 Case a Como (TheLuxe Bloccata 9.8/10) + 8 Altre Destinazioni (Svizzera 🇨🇭, Italia, Francia) ordinate per voto • 🚗 Calcolo 3 Auto da Torino (Benzina, Caselli + Vignetta CH) • 🛏️ Dettaglio Camere, Bagni e Divani Letto." />
-  <meta property="og:image" content="https://placehold.co/1200x630/1e1b4b/ffffff.png?text=Capodanno+2026%2F2027+%E2%80%A2+Confronto+12+Case+%26+Ville%0AComo+%284%29+%E2%80%A2+Svizzera%2C+Italia+%26+Francia+%288%29+%E2%80%A2+Da+Torino+%283+Auto%29" />
-  <meta property="og:image:secure_url" content="https://placehold.co/1200x630/1e1b4b/ffffff.png?text=Capodanno+2026%2F2027+%E2%80%A2+Confronto+12+Case+%26+Ville%0AComo+%284%29+%E2%80%A2+Svizzera%2C+Italia+%26+Francia+%288%29+%E2%80%A2+Da+Torino+%283+Auto%29" />
-  <meta property="og:image:type" content="image/png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Capodanno 2026/2027 – Confronto 12 Case e Ville da Torino" />
-
-  <!-- TWITTER / X LARGE CARD PREVIEW -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="🎆 Capodanno 2026/2027 – Confronto 12 Case & Ville" />
-  <meta name="twitter:description" content="Confronto completo: 4 case a Como e 8 tra Svizzera (Locarno, Brissago), Arona, Chiavari, Alba, Lione, Annecy e Nizza. Prezzo totale e diviso a persona con 3 auto da Torino." />
-  <meta name="twitter:image" content="https://placehold.co/1200x630/1e1b4b/ffffff.png?text=Capodanno+2026%2F2027+%E2%80%A2+Confronto+12+Case+%26+Ville%0AComo+%284%29+%E2%80%A2+Svizzera%2C+Italia+%26+Francia+%288%29+%E2%80%A2+Da+Torino+%283+Auto%29" />
-
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-          },
-          colors: {
-            brand: {
-              50: '#eef2ff',
-              100: '#e0e7ff',
-              500: '#6366f1',
-              600: '#4f46e5',
-              700: '#4338ca',
-              900: '#1e1b4b',
-            }
-          }
-        }
-      }
-    }
-  </script>
   <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #f8fafc;
-      color: #0f172a;
-    }
-    .no-scrollbar::-webkit-scrollbar {
-      display: none;
-    }
-    .no-scrollbar {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-    }
-    .card-shadow {
-      box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.06), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
-    }
-    .card-shadow:hover {
-      box-shadow: 0 20px 30px -10px rgba(15, 23, 42, 0.12), 0 10px 15px -6px rgba(15, 23, 42, 0.06);
-    }
+    body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #0f172a; }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    .card-shadow { box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.06), 0 8px 10px -6px rgba(15, 23, 42, 0.04); }
   </style>
 </head>
 <body class="min-h-screen flex flex-col selection:bg-indigo-600 selection:text-white">
 
   <!-- HEADER HERO -->
   <header class="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white relative overflow-hidden border-b border-indigo-900/60">
-    <div class="absolute inset-0 opacity-15 pointer-events-none bg-[radial-gradient(#818cf8_1px,transparent_1px)] [background-size:20px_20px]"></div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 relative z-10">
       <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
         <div>
-          <div class="inline-flex flex-wrap items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/20 border border-indigo-400/30 text-indigo-200 text-xs font-semibold uppercase tracking-wider mb-2">
-            <span>🎆 31 Dicembre 2026 – 2 Gennaio 2027 (2 Notti)</span>
-            <span>•</span>
-            <span>Partenza da Torino (3 Auto)</span>
-            <span>•</span>
-            <span class="text-emerald-300 font-bold">🔒 TheLuxe Residences Bloccata</span>
-          </div>
           <h1 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-white">
             Capodanno 2026/2027 – Confronto 12 Case & Ville
           </h1>
-          <p class="text-slate-300 text-sm sm:text-base mt-1 max-w-3xl">
-            Le <strong class="text-white">12 strutture selezionate</strong> divise per <strong class="text-white">Como e Lago di Como (4)</strong> in cima e <strong class="text-white">Altre Destinazioni: Svizzera 🇨🇭, Italia e Francia 🇫🇷 (8)</strong>, ordinate per valutazione decrescente. La <strong class="text-red-300">🇨🇭 Vignetta Svizzera (€43/auto = €129 per 3 auto)</strong> è applicata esclusivamente a <strong class="text-white">Schloss Locarno</strong> e <strong class="text-white">Residence Venus Garden (Brissago)</strong>.
+          <p class="text-slate-300 text-sm sm:text-base mt-1">
+            4 case a Como in cima e 8 tra Svizzera 🇨🇭, Italia e Francia 🇫🇷 ordinate per valutazione.
           </p>
-        </div>
-
-        <div class="flex flex-wrap items-center gap-2.5">
-          <button onclick="openSharePreviewModal()"
-                  class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold text-xs sm:text-sm transition shadow-lg shadow-amber-900/30">
-            <span>🖼️ Condividi con Immaginina</span>
-          </button>
-          <a href="https://docs.google.com/spreadsheets/d/1MppjdA5cU8znDx4KidUD8D6s__0CQDrmYETk4m7dim8/edit?usp=sharing" target="_blank" rel="noopener noreferrer"
-             class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs sm:text-sm transition shadow-lg shadow-emerald-900/30">
-            <span>📊 Foglio Google</span>
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-          </a>
-          <button onclick="openComparisonModal()" id="headerCompareBtn"
-                  class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs sm:text-sm transition shadow-lg shadow-indigo-900/40">
-            <span>⚖️ Confronta Selezionate</span>
-            <span id="compareCountBadge" class="px-2 py-0.5 text-xs rounded-full bg-white text-indigo-700 font-extrabold">0</span>
-          </button>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- STICKY CONTROL PANEL (CALCOLATORE & FILTRI) -->
+  <!-- CONTROLLI E FILTRI -->
   <section class="sticky top-0 z-30 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
-      <!-- Top Row: Calculator Controls -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 items-center">
-        
-        <!-- 1. Numero Ospiti / Modalità Divisione -->
-        <div class="flex items-center justify-between bg-slate-50 border border-slate-200/80 rounded-xl px-3.5 py-2">
-          <div>
-            <span class="block text-[11px] font-bold uppercase tracking-wider text-slate-400">Dividi Costi Per</span>
-            <div class="flex items-center gap-1.5 mt-0.5">
-              <button onclick="setGuestMode('fixed')" id="guestModeFixedBtn" class="px-2 py-0.5 rounded text-[11px] font-extrabold bg-indigo-600 text-white transition">Numero fisso</button>
-              <button onclick="setGuestMode('capacity')" id="guestModeCapBtn" class="px-2 py-0.5 rounded text-[11px] font-bold bg-slate-200 text-slate-700 hover:bg-slate-300 transition" title="Divide per la capienza specifica di ogni casa (8 o 10)">Capienza casa</button>
-            </div>
-          </div>
-          <div class="flex items-center gap-1.5" id="fixedGuestsControls">
-            <button onclick="changeGuests(-1)" class="w-7 h-7 rounded-lg bg-white border border-slate-300 hover:bg-slate-100 text-slate-700 font-bold flex items-center justify-center transition active:scale-95" title="Riduci ospiti">−</button>
-            <span id="guestsDisplay" class="text-sm sm:text-base font-extrabold text-indigo-700 min-w-[52px] text-center">10 pers.</span>
-            <button onclick="changeGuests(1)" class="w-7 h-7 rounded-lg bg-white border border-slate-300 hover:bg-slate-100 text-slate-700 font-bold flex items-center justify-center transition active:scale-95" title="Aumenta ospiti">+</button>
-          </div>
-        </div>
-
-        <!-- 2. Numero Auto -->
-        <div class="flex items-center justify-between bg-slate-50 border border-slate-200/80 rounded-xl px-3.5 py-2">
-          <div>
-            <span class="block text-[11px] font-bold uppercase tracking-wider text-slate-400">Flotta Viaggio</span>
-            <span class="text-xs text-slate-600 font-medium">Moltiplica caselli/benzina/vignetta:</span>
-          </div>
-          <div class="flex items-center gap-2">
-            <button onclick="changeCars(-1)" class="w-8 h-8 rounded-lg bg-white border border-slate-300 hover:bg-slate-100 text-slate-700 font-bold flex items-center justify-center transition active:scale-95" title="Riduci auto">−</button>
-            <span id="carsDisplay" class="text-base font-extrabold text-indigo-700 min-w-[54px] text-center">3 auto</span>
-            <button onclick="changeCars(1)" class="w-8 h-8 rounded-lg bg-white border border-slate-300 hover:bg-slate-100 text-slate-700 font-bold flex items-center justify-center transition active:scale-95" title="Aumenta auto">+</button>
-          </div>
-        </div>
-
-        <!-- 3. Toggle Includi Viaggio nel Prezzo Principale -->
-        <label class="flex items-center justify-between bg-indigo-50/70 border border-indigo-200/80 rounded-xl px-3.5 py-2 cursor-pointer select-none hover:bg-indigo-50 transition">
-          <div class="pr-2">
-            <span class="block text-[11px] font-bold uppercase tracking-wider text-indigo-600">Modalità Prezzo</span>
-            <span class="text-xs font-semibold text-slate-800">Includi Viaggio (<span id="carsLabelInline">3</span> auto) nel Totale</span>
-          </div>
-          <input type="checkbox" id="includeTravelToggle" checked onchange="toggleIncludeTravel(this.checked)" class="sr-only peer">
-          <div class="w-11 h-6 bg-slate-300 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all relative peer-checked:bg-indigo-600 shrink-0"></div>
-        </label>
-
-        <!-- 4. Info Regola Vignetta Svizzera Automatica -->
-        <div class="flex items-center justify-between bg-red-50/90 border border-red-200 rounded-xl px-3.5 py-2">
-          <div>
-            <span class="flex items-center gap-1 text-[11px] font-extrabold uppercase tracking-wider text-red-700">
-              <span>🇨🇭 Vignetta Svizzera (€43/auto)</span>
-            </span>
-            <span class="text-xs font-semibold text-slate-800" id="swissSummaryLabel">Solo Locarno e Brissago (+€129 per 3 auto)</span>
-          </div>
-          <span class="px-2 py-1 rounded-lg bg-red-600 text-white font-extrabold text-[11px] shrink-0">2 CASE CH</span>
-        </div>
-
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-2">
+        <button onclick="setFilter('all')" id="filter-all" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-900 text-white">Tutte le Case (12)</button>
+        <button onclick="setFilter('como')" id="filter-como" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-100 text-slate-700">Como (4)</button>
+        <button onclick="setFilter('other')" id="filter-other" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-100 text-slate-700">Altre (8)</button>
       </div>
-
-      <!-- Bottom Row: Filters & Search -->
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 mt-3 pt-2.5 border-t border-slate-100">
-        <!-- Filter Pills -->
-        <div class="flex items-center gap-1.5 overflow-x-auto no-scrollbar pb-1 sm:pb-0">
-          <button onclick="setFilter('all')" id="filter-all" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-bold transition whitespace-nowrap bg-slate-900 text-white shadow">
-            Tutte le Case (12)
-          </button>
-          <button onclick="setFilter('como')" id="filter-como" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-bold transition whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-slate-200">
-            📍 Solo Como & Lago (4)
-          </button>
-          <button onclick="setFilter('other')" id="filter-other" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-bold transition whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-slate-200">
-            🌍 Altre Destinazioni (8)
-          </button>
-          <button onclick="setFilter('swiss')" id="filter-swiss" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-bold transition whitespace-nowrap bg-red-50 text-red-700 border border-red-200 hover:bg-red-100">
-            🇨🇭 Solo Svizzera (2)
-          </button>
-          <button onclick="setFilter('no-sofa')" id="filter-no-sofa" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-bold transition whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-slate-200">
-            🛏️ 0 Divani Letto (7)
-          </button>
-          <button onclick="setFilter('free-cancel')" id="filter-free-cancel" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-bold transition whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-slate-200">
-            ✅ Cancellazione Gratuita (10)
-          </button>
-          <button onclick="setFilter('cap-10')" id="filter-cap-10" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-bold transition whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-slate-200">
-            👥 Capienza 10 Persone (6)
-          </button>
-        </div>
-
-        <!-- Search & Sort + Reset LocalStorage -->
-        <div class="flex flex-wrap items-center gap-2">
-          <div class="relative flex-1 sm:w-52">
-            <input type="text" id="searchInput" oninput="handleSearch(this.value)" placeholder="Cerca nome, città, letti..."
-                   class="w-full pl-8 pr-3 py-1.5 text-xs bg-slate-100 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:bg-white">
-            <svg class="w-3.5 h-3.5 text-slate-400 absolute left-2.5 top-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-          </div>
-          <select id="sortSelect" onchange="handleSort(this.value)" class="text-xs font-semibold bg-slate-100 border border-slate-200 rounded-lg px-2.5 py-1.5 text-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">
-            <option value="rating-desc">⭐ Ordine: Valutazione (Decrescente)</option>
-            <option value="price-asc">💶 Ordine: Prezzo Totale (Crescente)</option>
-            <option value="distance-asc">🚗 Ordine: Distanza da Torino (Crescente)</option>
-          </select>
-          <button onclick="resetToDefaultData()" title="Ripristina i dati originali delle 12 strutture"
-                  class="px-2.5 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-600 text-xs font-semibold border border-slate-200 transition">
-            ↺ Ripristina Dati
-          </button>
-        </div>
-      </div>
+      <button onclick="resetToDefaultData()" class="px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold border">↺ Ripristina Dati</button>
     </div>
   </section>
 
-  <!-- QUICK SUMMARY BANNER -->
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-5">
-    <div class="bg-gradient-to-r from-emerald-50 via-white to-indigo-50 border border-emerald-200 rounded-2xl p-4 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 shadow-sm">
-      <div class="flex items-start gap-3">
-        <div class="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center shrink-0 font-bold text-lg shadow">
-          🔒
-        </div>
-        <div class="text-xs sm:text-sm text-slate-700">
-          <p class="font-bold text-slate-900">Tabella Aggiornata con le 12 Strutture Ufficiali • Zero Foto Finte • Link Diretto alle Foto su Booking.com</p>
-          <p class="mt-0.5">
-            In cima a Como trovi <strong class="text-emerald-700">TheLuxe Residences (9.8/10 • €1.518 • BLOCCATO con cancellazione gratuita fino al 28 dic 2026)</strong>. La <strong class="text-red-600">Vignetta Svizzera (€43 × <span id="bannerCarsCount">3 auto</span> = €129)</strong> viene applicata solo a <strong>Schloss Locarno</strong> e <strong>Residence Venus Garden (Brissago)</strong>.
-          </p>
-        </div>
-      </div>
-      <div class="flex flex-wrap items-center gap-2 self-end md:self-center shrink-0">
-        <a href="#section-como" class="px-3 py-1.5 rounded-lg bg-indigo-100 hover:bg-indigo-200 text-indigo-800 font-bold text-xs transition">
-          📍 Como (4) ↓
-        </a>
-        <a href="#section-other" class="px-3 py-1.5 rounded-lg bg-amber-100 hover:bg-amber-200 text-amber-900 font-bold text-xs transition">
-          🌍 Svizzera, Italia & Francia (8) ↓
-        </a>
-        <a href="#section-summary-table" class="px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs transition">
-          📋 Tabella Riepilogativa ↓
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- MAIN CONTENT CONTAINER -->
+  <!-- CONTENUTO PRINCIPALE (GRIGLIE) -->
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex-1 w-full space-y-12">
 
-    <!-- SECTION 1: COMO E LAGO DI COMO (4 STRUTTURE) -->
-    <section id="section-como" class="scroll-mt-36">
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2 pb-4 border-b-2 border-indigo-600 mb-6">
-        <div>
-          <div class="inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-wider text-indigo-600 mb-1">
-            <span>📍 Sezione 1 • Como e Lago di Como</span>
-            <span>•</span>
-            <span>Ordinate per Valutazione Decrescente (9.8 → 8.6)</span>
-          </div>
-          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 flex items-center gap-2.5">
-            <span>Como e Lago di Como</span>
-            <span id="comoCountBadge" class="text-sm font-bold px-3 py-1 rounded-full bg-indigo-100 text-indigo-700">4 strutture</span>
-          </h2>
-        </div>
-        <p class="text-xs sm:text-sm text-slate-600">
-          Distanza da Torino: <strong>~175 km (350 km A/R, ~2h)</strong> • Caselli A/R: <strong>~€38/auto</strong> • <strong>Vignetta Svizzera: €0</strong>
-        </p>
-      </div>
-
-      <div id="comoGrid" class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <!-- Populated by JS -->
-      </div>
+    <!-- SEZIONE COMO -->
+    <section id="section-como">
+      <h2 class="text-2xl font-extrabold text-slate-900 mb-4">Como e Lago di Como (<span id="comoCountBadge">0</span>)</h2>
+      <div id="comoGrid" class="grid grid-cols-1 lg:grid-cols-2 gap-6"></div>
     </section>
 
-    <!-- SECTION 2: ALTRE DESTINAZIONI (8 STRUTTURE) -->
-    <section id="section-other" class="scroll-mt-36">
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2 pb-4 border-b-2 border-amber-500 mb-6">
-        <div>
-          <div class="inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-wider text-amber-600 mb-1">
-            <span>🌍 Sezione 2 • Svizzera 🇨🇭, Francia 🇫🇷, Lago Maggiore, Liguria e Langhe</span>
-            <span>•</span>
-            <span>Ordinate per Valutazione Decrescente (9.8 → 8.6)</span>
-          </div>
-          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 flex items-center gap-2.5">
-            <span>Altre Destinazioni (Svizzera 🇨🇭, Italia & Francia 🇫🇷)</span>
-            <span id="otherCountBadge" class="text-sm font-bold px-3 py-1 rounded-full bg-amber-100 text-amber-800">8 strutture</span>
-          </h2>
-        </div>
-        <p class="text-xs sm:text-sm text-slate-600">
-          La <strong class="text-red-600">Vignetta Svizzera (€43/auto)</strong> è applicata solo a <strong>Schloss Locarno</strong> e <strong>Residence Venus Garden (Brissago)</strong>.
-        </p>
-      </div>
-
-      <div id="otherGrid" class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <!-- Populated by JS -->
-      </div>
+    <!-- SEZIONE ALTRE -->
+    <section id="section-other">
+      <h2 class="text-2xl font-extrabold text-slate-900 mb-4">Altre Destinazioni (<span id="otherCountBadge">0</span>)</h2>
+      <div id="otherGrid" class="grid grid-cols-1 lg:grid-cols-2 gap-6"></div>
     </section>
 
-    <!-- SECTION 3: TABELLA COMPARATIVA GENERALE DI TUTTE LE 12 CASE -->
-    <section id="section-summary-table" class="scroll-mt-36 pt-4">
+    <!-- TABELLA COMPARATIVA -->
+    <section id="section-summary-table">
       <div class="bg-white rounded-2xl border border-slate-200 card-shadow overflow-hidden">
-        <div class="px-5 py-4 bg-slate-900 text-white flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-          <div>
-            <h2 class="text-lg sm:text-xl font-extrabold">📋 Tabella Comparativa Completa (Tutte le 12 Strutture)</h2>
-            <p class="text-xs text-slate-300">Confronto rapido di tutte le voci: tipologia/appartamenti, capienza, camere e disposizione letti, bagni, soggiorni, stato cancellazione, distanza A/R, caselli, vignetta CH e prezzo a persona.</p>
-          </div>
-          <span class="text-xs font-bold px-3 py-1.5 rounded-lg bg-indigo-600 text-white shrink-0">
-            Calcolato su <span id="tableSummaryGuests">10 persone</span> e <span id="tableSummaryCars">3</span> auto
-          </span>
-        </div>
+        <div class="px-5 py-4 bg-slate-900 text-white font-extrabold">Tabella Comparativa Completa</div>
         <div class="overflow-x-auto">
-          <table class="w-full text-left border-collapse text-xs">
+          <table class="w-full text-left text-xs">
             <thead>
-              <tr class="bg-slate-100 text-slate-700 border-b border-slate-200 uppercase text-[10px] tracking-wider font-extrabold">
-                <th class="p-3"># / Sezione</th>
-                <th class="p-3">Struttura, Stato & Link Foto</th>
-                <th class="p-3">Località / Indirizzo & Dist. TO</th>
+              <tr class="bg-slate-100 text-slate-700 border-b">
+                <th class="p-3">Struttura</th>
+                <th class="p-3">Località</th>
                 <th class="p-3">Valutazione</th>
-                <th class="p-3">Tipologia & Capienza</th>
-                <th class="p-3">Camere & Disposizione Letti</th>
-                <th class="p-3">Bagni & Soggiorni</th>
-                <th class="p-3">Alloggio</th>
-                <th class="p-3">Viaggio (<span id="thCarsCount">3</span> auto)</th>
-                <th class="p-3 bg-indigo-50 text-indigo-950">Totale & Quota/Pers.</th>
+                <th class="p-3">Camere & Letti</th>
+                <th class="p-3">Prezzo Totale</th>
               </tr>
             </thead>
-            <tbody id="fullComparisonTableBody" class="divide-y divide-slate-200">
-              <!-- Populated by JS -->
-            </tbody>
+            <tbody id="fullComparisonTableBody" class="divide-y divide-slate-200"></tbody>
           </table>
         </div>
       </div>
@@ -342,695 +85,62 @@
 
   </main>
 
-  <!-- EDIT / CUSTOMIZE PROPERTY MODAL -->
-  <div id="editModal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
-    <div class="bg-white rounded-2xl max-w-2xl w-full overflow-hidden shadow-2xl border border-slate-200">
-      <div class="flex items-center justify-between px-5 py-4 bg-slate-900 text-white">
-        <div>
-          <h3 class="font-extrabold text-base sm:text-lg">✏️ Modifica / Personalizza Dati Casa</h3>
-          <p class="text-xs text-slate-300">Le modifiche vengono salvate automaticamente nel tuo browser e ricalcolano subito totali e classifica.</p>
-        </div>
-        <button onclick="closeEditModal()" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 text-white flex items-center justify-center font-bold">✕</button>
-      </div>
-
-      <form onsubmit="saveEditedProperty(event)" class="p-5 space-y-4 max-h-[80vh] overflow-y-auto text-xs sm:text-sm">
-        <input type="hidden" id="editPropId">
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <div>
-            <label class="block font-bold text-slate-700 mb-1">Nome Casa / Annuncio</label>
-            <input type="text" id="editName" required class="w-full px-3 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
-          </div>
-          <div>
-            <label class="block font-bold text-slate-700 mb-1">Luogo / Città</label>
-            <input type="text" id="editLocation" required class="w-full px-3 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
-          </div>
-        </div>
-
-        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
-          <div>
-            <label class="block font-bold text-slate-700 mb-1">Prezzo Alloggio (€)</label>
-            <input type="number" step="1" id="editPrice" required class="w-full px-3 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
-          </div>
-          <div>
-            <label class="block font-bold text-slate-700 mb-1">Punteggio (0 - 10)</label>
-            <input type="number" step="0.01" min="0" max="10" id="editRating" required class="w-full px-3 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
-          </div>
-          <div>
-            <label class="block font-bold text-slate-700 mb-1">Etichetta Voto</label>
-            <input type="text" id="editRatingDisplay" required class="w-full px-3 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
-          </div>
-          <div>
-            <label class="block font-bold text-slate-700 mb-1">In Svizzera? 🇨🇭</label>
-            <select id="editIsSwiss" class="w-full px-3 py-2 rounded-lg border border-slate-300 font-bold focus:ring-2 focus:ring-indigo-500 focus:outline-none">
-              <option value="true">Sì (+€43/auto Vignetta)</option>
-              <option value="false">No (€0 Vignetta)</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
-          <div>
-            <label class="block font-bold text-slate-700 mb-1">🏢 N. Appartamenti</label>
-            <input type="text" id="editApartments" required class="w-full px-3 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
-          </div>
-          <div>
-            <label class="block font-bold text-slate-700 mb-1">🛏️ N. Camere</label>
-            <input type="text" id="editBedrooms" required class="w-full px-3 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
-          </div>
-          <div>
-            <label class="block font-bold text-slate-700 mb-1">🚿 N. Bagni</label>
-            <input type="text" id="editBathrooms" required class="w-full px-3 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
-          </div>
-          <div>
-            <label class="block font-bold text-slate-700 mb-1">🛋️ N. Soggiorni</label>
-            <input type="text" id="editLivingRooms" required class="w-full px-3 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
-          </div>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-          <div class="sm:col-span-2">
-            <label class="block font-bold text-slate-700 mb-1">🛌 Tipologie Letti</label>
-            <input type="text" id="editBedsDetail" required class="w-full px-3 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
-          </div>
-          <div>
-            <label class="block font-bold text-slate-700 mb-1">🛋️ N. Divani Letto (testo)</label>
-            <input type="text" id="editSofaLabel" required class="w-full px-3 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none" placeholder="es. 0 oppure 2">
-          </div>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-4 gap-3">
-          <div>
-            <label class="block font-bold text-slate-700 mb-1">🚗 Dist. A/R Torino (km)</label>
-            <input type="number" step="1" id="editDistanceRoundTrip" required class="w-full px-3 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
-          </div>
-          <div>
-            <label class="block font-bold text-slate-700 mb-1">⛽ Benzina A/R 1 auto (€)</label>
-            <input type="number" step="0.01" id="editFuelPerCar" required class="w-full px-3 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
-          </div>
-          <div>
-            <label class="block font-bold text-slate-700 mb-1">🛣️ Caselli A/R 1 auto (€)</label>
-            <input type="number" step="0.5" id="editTollsPerCar" required class="w-full px-3 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
-          </div>
-          <div>
-            <label class="block font-bold text-slate-700 mb-1">Sezione Sito</label>
-            <select id="editGroup" class="w-full px-3 py-2 rounded-lg border border-slate-300 font-bold focus:ring-2 focus:ring-indigo-500 focus:outline-none">
-              <option value="como">Como e Lago di Como</option>
-              <option value="other">Altre Destinazioni</option>
-            </select>
-          </div>
-        </div>
-
-        <div>
-          <label class="block font-bold text-slate-700 mb-1">🔗 Link Annuncio (Booking / Airbnb)</label>
-          <input type="url" id="editBookingUrl" required class="w-full px-3 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
-        </div>
-
-        <div class="flex items-center justify-end gap-2 pt-3 border-t border-slate-200">
-          <button type="button" onclick="closeEditModal()" class="px-4 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold">Annulla</button>
-          <button type="submit" class="px-5 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-extrabold shadow">💾 Salva e Ricalcola</button>
-        </div>
-      </form>
-    </div>
-  </div>
-
-  <!-- COMPARISON MODAL -->
-  <div id="comparisonModal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-3 sm:p-6">
-    <div class="bg-white rounded-2xl max-w-6xl w-full max-h-[90vh] flex flex-col overflow-hidden shadow-2xl border border-slate-200">
-      <div class="flex items-center justify-between px-5 py-4 bg-slate-900 text-white">
-        <div>
-          <h3 class="font-extrabold text-lg">⚖️ Confronto Diretto Case Selezionate</h3>
-          <p class="text-xs text-slate-300">Confronta fianco a fianco camere, divani letto, bagni, distanza da Torino e prezzo finito a persona.</p>
-        </div>
-        <div class="flex items-center gap-2">
-          <button onclick="clearComparison()" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold transition">Svuota Tutto</button>
-          <button onclick="closeComparisonModal()" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 text-white flex items-center justify-center font-bold">✕</button>
-        </div>
-      </div>
-      <div id="comparisonContent" class="p-4 sm:p-6 overflow-auto flex-1">
-        <!-- Populated by JS -->
-      </div>
-    </div>
-  </div>
-
-  <!-- SOCIAL PREVIEW & SHARE MODAL ("IMMAGININA DEL SITO" 1200x630) -->
-  <div id="sharePreviewModal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-3 sm:p-6">
-    <div class="bg-white rounded-2xl max-w-3xl w-full max-h-[92vh] flex flex-col overflow-hidden shadow-2xl border border-slate-200">
-      <div class="flex items-center justify-between px-5 py-4 bg-slate-900 text-white">
-        <div class="flex items-center gap-2.5">
-          <span class="text-xl">🖼️</span>
-          <div>
-            <h3 class="font-extrabold text-base sm:text-lg">Anteprima Social ("Immaginina del Sito") & Condivisione</h3>
-            <p class="text-xs text-slate-300">Meta tag Open Graph <code class="text-amber-300">og:image</code> integrati + Generatore Card HD per WhatsApp / Telegram</p>
-          </div>
-        </div>
-        <button onclick="closeSharePreviewModal()" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 text-white flex items-center justify-center font-bold">✕</button>
-      </div>
-
-      <div class="p-4 sm:p-6 overflow-y-auto space-y-5 text-xs sm:text-sm">
-        <!-- WhatsApp / Telegram Simulated Link Preview Box -->
-        <div>
-          <div class="flex items-center justify-between mb-2">
-            <span class="text-[11px] font-extrabold uppercase tracking-wider text-slate-500">Anteprima Live Card (1200×630 px) aggiornata coi tuoi parametri:</span>
-            <span class="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-bold text-[11px]">✓ Meta Tag Open Graph Attivi</span>
-          </div>
-
-          <div class="rounded-2xl overflow-hidden border-2 border-slate-200 bg-slate-100 shadow-inner p-2 sm:p-3">
-            <!-- Canvas renders the high-res 1200x630 social preview card -->
-            <canvas id="socialPreviewCanvas" width="1200" height="630" class="w-full h-auto rounded-xl shadow-md block bg-slate-900"></canvas>
-            <!-- Simulated WhatsApp / Telegram link bar under image -->
-            <div class="bg-white rounded-b-xl p-3 mt-1 border border-slate-200/80">
-              <p class="text-[11px] font-bold text-emerald-700 uppercase">capodanno-2026-2027 • confronto 12 case & ville</p>
-              <p class="font-extrabold text-slate-900 text-sm mt-0.5">🎆 Capodanno 2026/2027 – Confronto 12 Case & Ville (Como, Svizzera, Italia & Francia)</p>
-              <p class="text-xs text-slate-600 mt-0.5">📍 4 Case a Como (TheLuxe Bloccata 9.8/10) + 8 Altre Destinazioni ordinate per valutazione • 🚗 Viaggio 3 Auto da Torino con caselli e Vignetta Svizzera.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Explanation note: Link vs File .html -->
-        <div class="bg-indigo-50 border border-indigo-200 rounded-xl p-3.5 text-xs text-slate-700 space-y-1">
-          <p class="font-extrabold text-indigo-950">💡 Come funziona l'immaginina quando condividi su WhatsApp o Telegram:</p>
-          <p>• <strong>Se condividi il link web del sito:</strong> il codice contiene già i tag ufficiali <code class="font-mono bg-white px-1 py-0.5 rounded">og:image</code>, <code class="font-mono bg-white px-1 py-0.5 rounded">og:title</code>, <code class="font-mono bg-white px-1 py-0.5 rounded">twitter:card</code> e l'icona Favicon SVG, quindi WhatsApp/Telegram mostrano automaticamente l'anteprima con immagine.</p>
-          <p>• <strong>Se invii il file direttamente in chat:</strong> usa il tasto <strong>"📲 Condividi Card + Link"</strong> qui sotto (su smartphone allega direttamente l'immaginina generata sopra!) oppure scarica l'immagine PNG di copertina.</p>
-        </div>
-
-        <!-- Action Buttons -->
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 pt-1">
-          <button onclick="shareSiteWithImageCard()"
-                  class="flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-xs sm:text-sm shadow-lg shadow-emerald-900/20 transition">
-            <span>📲 Condividi Card + Link</span>
-          </button>
-          <button onclick="downloadSocialPreviewPng()"
-                  class="flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-extrabold text-xs sm:text-sm shadow-lg shadow-indigo-900/20 transition">
-            <span>⬇️ Scarica Immaginina (.PNG)</span>
-          </button>
-          <button onclick="copySummaryTextForChat()"
-                  class="flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-extrabold text-xs sm:text-sm transition">
-            <span>📋 Copia Testo Riepilogo</span>
-          </button>
-        </div>
-
-        <div id="shareFeedbackBanner" class="hidden rounded-xl bg-emerald-100 border border-emerald-300 text-emerald-900 px-4 py-2.5 text-xs font-bold text-center"></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- FOOTER -->
-  <footer class="bg-slate-900 text-slate-400 text-xs py-8 mt-12 border-t border-slate-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <div>
-        <p class="font-bold text-white text-sm">Capodanno 2026/2027 – Dashboard Confronto Alloggi (Senza Foto Finte)</p>
-        <p class="mt-0.5">Dati sincronizzati dal Foglio Google condiviso • Calcolo automatico per 3 auto da Torino + Vignetta Svizzera (€43/auto) solo sulle case in Svizzera.</p>
-      </div>
-      <div class="flex items-center gap-4">
-        <button onclick="window.scrollTo({top:0, behavior:'smooth'})" class="px-3.5 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold transition">
-          ↑ Torna in cima
-        </button>
-      </div>
-    </div>
-  </footer>
-
-  <!-- APPLICATION DATA & LOGIC -->
+  <!-- LOGICA JAVASCRIPT SICURA -->
   <script>
-    const STORAGE_KEY = 'capodanno_2026_12case_v3';
+    const STORAGE_KEY = 'capodanno_2026_fix_v4';
 
-    // Global State
-    const state = {
-      guests: 10,
-      guestMode: 'fixed', // 'fixed' (uses state.guests) or 'capacity' (uses property maxGuests)
-      cars: 3,
-      includeTravel: true,
-      filter: 'all',
-      search: '',
-      sortBy: 'rating-desc',
-      compareIds: [1, 2, 5, 6]
-    };
-
-    // Complete Dataset of the 12 Official Properties (No fake photos!)
     const defaultProperties = [
-      // ==========================================
-      // SEZIONE 1: COMO E LAGO DI COMO (4 CASE)
-      // Ordinate per valutazione decrescente: 9.8 -> 9.4 -> 9.2 -> 8.6
-      // ==========================================
       {
-        id: 1,
-        sheetNumber: "#1 Como",
-        name: "TheLuxe Residences",
-        group: "como",
-        location: "Viale Fratelli Rosselli, 5A, 22100 Como, Italia",
-        shortLocation: "Como (Centro / Lungolago)",
-        regionBadge: "Lago di Como",
-        isSwitzerland: false,
-        isBlocked: true,
-        ratingNormalized: 9.8,
-        ratingDisplay: "9.8/10 (14 recensioni)",
-        platform: "Booking.com",
-        hasDirectLink: true,
-        priceAccommodation: 1518,
-        available: true,
-        guestsCapacity: "Prezzo per 8 persone (10 posti letto)",
-        maxGuests: 10,
-        pricedForGuests: 8,
-        apartmentsCount: "2 appartamenti",
-        bedroomsCount: "3 camere da letto",
-        bedsDetail: "3 camere da letto + 2 divani letto (10 posti letto totali)",
-        sofaBedsCount: 2,
-        sofaBedsLabel: "2 divani letto",
-        bathroomsCount: "2 bagni (1 per appartamento)",
-        livingRoomsCount: "2 soggiorni con cucina",
-        distanceOneWayKm: 175,
-        distanceRoundTripKm: 350,
-        driveTimeOneWay: "~2h 00m",
-        fuelPerCar: 45.00,
-        tollsPerCar: 38.00,
-        tollsNote: "Caselli A/R Torino–Como: ~€38,00 ad auto (€114 per 3 auto)",
-        cancellation: "Bloccato – Cancellazione gratuita fino al 28 dicembre 2026",
-        hasFreeCancel: true,
-        bookingUrl: "https://www.booking.com/Share-BmJkPc"
+        id: 1, sheetNumber: "#1 Como", name: "TheLuxe Residences", group: "como",
+        location: "Viale Fratelli Rosselli, 5A, Como", isSwitzerland: false, isBlocked: true,
+        ratingNormalized: 9.8, ratingDisplay: "9.8/10", platform: "Booking.com",
+        priceAccommodation: 1518, guestsCapacity: "8-10 persone", apartmentsCount: "2 appartamenti",
+        bedroomsCount: "3 camere", bedsDetail: "3 camere + 2 divani letto", sofaBedsCount: 2, sofaBedsLabel: "2 divani letto",
+        bathroomsCount: "2 bagni", livingRoomsCount: "2 soggiorni", distanceRoundTripKm: 350,
+        fuelPerCar: 45, tollsPerCar: 38, tollsNote: "Caselli A/R ~€38", cancellation: "Bloccato - Cancellazione gratuita",
+        hasFreeCancel: true, bookingUrl: "https://www.booking.com/Share-BmJkPc"
       },
       {
-        id: 2,
-        sheetNumber: "#2 Como",
-        name: "Volta Suites",
-        group: "como",
-        location: "Como, Italia",
-        shortLocation: "Como",
-        regionBadge: "Lago di Como",
-        isSwitzerland: false,
-        isBlocked: false,
-        ratingNormalized: 9.4,
-        ratingDisplay: "9.4/10 (60 recensioni)",
-        platform: "Booking.com",
-        hasDirectLink: true,
-        priceAccommodation: 1859,
-        available: true,
-        guestsCapacity: "8 adulti",
-        maxGuests: 8,
-        pricedForGuests: 8,
-        apartmentsCount: "2 appartamenti",
-        bedroomsCount: "4 camere da letto",
-        bedsDetail: "4 camere da letto (0 divani letto)",
-        sofaBedsCount: 0,
-        sofaBedsLabel: "0 divani letto",
-        bathroomsCount: "2 bagni",
-        livingRoomsCount: "2 soggiorni con cucina",
-        distanceOneWayKm: 175,
-        distanceRoundTripKm: 350,
-        driveTimeOneWay: "~2h 00m",
-        fuelPerCar: 45.00,
-        tollsPerCar: 38.00,
-        tollsNote: "Caselli A/R Torino–Como: ~€38,00 ad auto (€114 per 3 auto)",
-        cancellation: "Non rimborsabile",
-        hasFreeCancel: false,
-        bookingUrl: "https://www.booking.com/Share-FbaaYN"
+        id: 2, sheetNumber: "#2 Como", name: "Volta Suites", group: "como",
+        location: "Como", isSwitzerland: false, isBlocked: false,
+        ratingNormalized: 9.4, ratingDisplay: "9.4/10", platform: "Booking.com",
+        priceAccommodation: 1859, guestsCapacity: "8 adulti", apartmentsCount: "2 appartamenti",
+        bedroomsCount: "4 camere", bedsDetail: "4 camere (0 divani letto)", sofaBedsCount: 0, sofaBedsLabel: "0 divani letto",
+        bathroomsCount: "2 bagni", livingRoomsCount: "2 soggiorni", distanceRoundTripKm: 350,
+        fuelPerCar: 45, tollsPerCar: 38, tollsNote: "Caselli A/R ~€38", cancellation: "Non rimborsabile",
+        hasFreeCancel: false, bookingUrl: "https://www.booking.com/Share-FbaaYN"
       },
       {
-        id: 3,
-        sheetNumber: "#3 Como",
-        name: "Private villa near Bellagio on Lake Como",
-        group: "como",
-        location: "7 Via Castagneti, Magreglio, 22030, Italia",
-        shortLocation: "Magreglio / Bellagio (CO)",
-        regionBadge: "Lago di Como",
-        isSwitzerland: false,
-        isBlocked: false,
-        ratingNormalized: 9.2,
-        ratingDisplay: "9.2/10 (5 recensioni)",
-        platform: "Booking.com",
-        hasDirectLink: true,
-        priceAccommodation: 1775,
-        available: true,
-        guestsCapacity: "8 adulti",
-        maxGuests: 8,
-        pricedForGuests: 8,
-        apartmentsCount: "1 villa",
-        bedroomsCount: "4 camere da letto",
-        bedsDetail: "4 camere da letto (0 divani letto)",
-        sofaBedsCount: 0,
-        sofaBedsLabel: "0 divani letto",
-        bathroomsCount: "2 bagni",
-        livingRoomsCount: "1 ampio soggiorno con cucina",
-        distanceOneWayKm: 190,
-        distanceRoundTripKm: 380,
-        driveTimeOneWay: "~2h 20m",
-        fuelPerCar: 49.00,
-        tollsPerCar: 36.00,
-        tollsNote: "Caselli A/R Torino–Lago di Como: ~€36,00 ad auto (€108 per 3 auto)",
-        cancellation: "Cancellazione gratuita prima dell'1 dicembre 2026",
-        hasFreeCancel: true,
-        bookingUrl: "https://www.booking.com/Share-eq856T"
+        id: 5, sheetNumber: "#1 Altre", name: "Villa prestige Lyon Ouest", group: "other",
+        location: "Écully (Lione), Francia", isSwitzerland: false, isBlocked: false,
+        ratingNormalized: 9.8, ratingDisplay: "9.8/10", platform: "Booking.com",
+        priceAccommodation: 1771, guestsCapacity: "Max 10 persone", apartmentsCount: "1 villa",
+        bedroomsCount: "5 camere", bedsDetail: "5 camere matrimoniali", sofaBedsCount: 0, sofaBedsLabel: "0 divani letto",
+        bathroomsCount: "5 bagni", livingRoomsCount: "1 soggiorno", distanceRoundTripKm: 630,
+        fuelPerCar: 81, tollsPerCar: 112, tollsNote: "Frejus A/R ~€112", cancellation: "Cancellazione gratuita",
+        hasFreeCancel: true, bookingUrl: "https://www.booking.com/Share-CPpnFj"
       },
       {
-        id: 4,
-        sheetNumber: "#4 Como",
-        name: "Il Vicolo",
-        group: "como",
-        location: "Via Cinque Giornate 14, Centro di Como, Como, 22100, Italia",
-        shortLocation: "Como Centro Storico",
-        regionBadge: "Lago di Como",
-        isSwitzerland: false,
-        isBlocked: false,
-        ratingNormalized: 8.6,
-        ratingDisplay: "8.6/10 (218 recensioni)",
-        platform: "Booking.com",
-        hasDirectLink: true,
-        priceAccommodation: 1515,
-        available: true,
-        guestsCapacity: "10 persone",
-        maxGuests: 10,
-        pricedForGuests: 10,
-        apartmentsCount: "1 appartamento + 1 monolocale (2 unità)",
-        bedroomsCount: "3 camere da letto",
-        bedsDetail: "3 camere da letto (di cui una da 4 posti) + 2 divani letto",
-        sofaBedsCount: 2,
-        sofaBedsLabel: "2 divani letto",
-        bathroomsCount: "2 bagni (1 per unità)",
-        livingRoomsCount: "2 zone giorno con cucina",
-        distanceOneWayKm: 175,
-        distanceRoundTripKm: 350,
-        driveTimeOneWay: "~2h 00m",
-        fuelPerCar: 45.00,
-        tollsPerCar: 38.00,
-        tollsNote: "Caselli A/R Torino–Como: ~€38,00 ad auto (€114 per 3 auto)",
-        cancellation: "Cancellazione gratuita prima del 26 dicembre 2026",
-        hasFreeCancel: true,
-        bookingUrl: "https://www.booking.com/Share-7Qp8JE"
-      },
-
-      // ==========================================
-      // SEZIONE 2: ALTRE DESTINAZIONI (8 CASE)
-      // Ordinate per valutazione decrescente: 9.8 -> 9.3 -> 9.2 -> 9.2 -> 9.1 -> 9.0 -> 8.7 -> 8.6
-      // ==========================================
-      {
-        id: 5,
-        sheetNumber: "#1 Altre",
-        name: "Villa prestige, cheminée, calme standing Lyon Ouest",
-        group: "other",
-        location: "Écully (Lione), Francia",
-        shortLocation: "Écully, Lione (Francia 🇫🇷)",
-        regionBadge: "Francia 🇫🇷 • Lione",
-        isSwitzerland: false,
-        isBlocked: false,
-        ratingNormalized: 9.8,
-        ratingDisplay: "9.8/10 (8 recensioni)",
-        platform: "Booking.com",
-        hasDirectLink: true,
-        priceAccommodation: 1771,
-        available: true,
-        guestsCapacity: "Max 10 persone",
-        maxGuests: 10,
-        pricedForGuests: 10,
-        apartmentsCount: "1 villa",
-        bedroomsCount: "5 camere da letto",
-        bedsDetail: "5 camere: Cam. 1–5 con 1 letto matrimoniale ciascuna (0 divani letto)",
-        sofaBedsCount: 0,
-        sofaBedsLabel: "0 divani letto",
-        bathroomsCount: "5 bagni",
-        livingRoomsCount: "1 grande soggiorno con camino e cucina",
-        distanceOneWayKm: 315,
-        distanceRoundTripKm: 630,
-        driveTimeOneWay: "~3h 30m",
-        fuelPerCar: 81.00,
-        tollsPerCar: 112.00,
-        tollsNote: "Caselli + Traforo del Frejus A/R: ~€112,00 ad auto (€336 per 3 auto)",
-        cancellation: "Cancellazione gratuita prima dell'1 dicembre 2026",
-        hasFreeCancel: true,
-        bookingUrl: "https://www.booking.com/Share-CPpnFj"
-      },
-      {
-        id: 6,
-        sheetNumber: "#2 Altre (CH)",
-        name: "Schloss Locarno",
-        group: "other",
-        location: "Via Bartolomeo Rusca 9, Il vero cuore di Locarno, Locarno, 6600, Svizzera",
-        shortLocation: "Locarno (Svizzera 🇨🇭)",
-        regionBadge: "🇨🇭 Svizzera • Lago Maggiore",
-        isSwitzerland: true,
-        isBlocked: false,
-        ratingNormalized: 9.3,
-        ratingDisplay: "9.3/10 (447 recensioni)",
-        platform: "Booking.com",
-        hasDirectLink: true,
-        priceAccommodation: 1829,
-        available: true,
-        guestsCapacity: "10 persone",
-        maxGuests: 10,
-        pricedForGuests: 10,
-        apartmentsCount: "2 appartamenti + terrazza",
-        bedroomsCount: "3 camere da letto",
-        bedsDetail: "3 camere + 2 divani letto (10 posti letto)",
-        sofaBedsCount: 2,
-        sofaBedsLabel: "2 divani letto",
-        bathroomsCount: "2 bagni",
-        livingRoomsCount: "2 soggiorni con cucina + terrazza",
-        distanceOneWayKm: 215,
-        distanceRoundTripKm: 430,
-        driveTimeOneWay: "~2h 40m",
-        fuelPerCar: 55.00,
-        tollsPerCar: 28.00,
-        tollsNote: "Caselli A/R (A4+A26): ~€28,00/auto + Vignetta Svizzera €43,00/auto",
-        cancellation: "Cancellazione gratuita prima del 17 dicembre 2026",
-        hasFreeCancel: true,
-        bookingUrl: "https://www.booking.com/Share-xJ5iM6P"
-      },
-      {
-        id: 7,
-        sheetNumber: "#3 Altre (CH)",
-        name: "Residence Venus Garden",
-        group: "other",
-        location: "Via Costa di Mezzo 34, Brissago, 6614, Svizzera",
-        shortLocation: "Brissago (Svizzera 🇨🇭)",
-        regionBadge: "🇨🇭 Svizzera • Lago Maggiore",
-        isSwitzerland: true,
-        isBlocked: false,
-        ratingNormalized: 9.2,
-        ratingDisplay: "9.2/10 (149 recensioni)",
-        platform: "Booking.com",
-        hasDirectLink: true,
-        priceAccommodation: 1413,
-        available: true,
-        guestsCapacity: "8 adulti",
-        maxGuests: 8,
-        pricedForGuests: 8,
-        apartmentsCount: "2 appartamenti",
-        bedroomsCount: "4 camere da letto",
-        bedsDetail: "4 camere da letto + 1 divano letto",
-        sofaBedsCount: 1,
-        sofaBedsLabel: "1 divano letto",
-        bathroomsCount: "2 bagni",
-        livingRoomsCount: "2 soggiorni con cucina",
-        distanceOneWayKm: 205,
-        distanceRoundTripKm: 410,
-        driveTimeOneWay: "~2h 30m",
-        fuelPerCar: 53.00,
-        tollsPerCar: 28.00,
-        tollsNote: "Caselli A/R (A4+A26): ~€28,00/auto + Vignetta Svizzera €43,00/auto",
-        cancellation: "Cancellazione gratuita prima del 30 dicembre 2026",
-        hasFreeCancel: true,
-        bookingUrl: "https://www.booking.com/Share-PIO2fy"
-      },
-      {
-        id: 8,
-        sheetNumber: "#4 Altre",
-        name: "Villa Lilia",
-        group: "other",
-        location: "Via Fratelli Bandiera 11, Arona, 28041, Italia",
-        shortLocation: "Arona (NO) - Lago Maggiore",
-        regionBadge: "Piemonte • Lago Maggiore",
-        isSwitzerland: false,
-        isBlocked: false,
-        ratingNormalized: 9.2,
-        ratingDisplay: "9.2/10 (87 recensioni)",
-        platform: "Booking.com",
-        hasDirectLink: true,
-        priceAccommodation: 1265,
-        available: true,
-        guestsCapacity: "8 adulti",
-        maxGuests: 8,
-        pricedForGuests: 8,
-        apartmentsCount: "2 appartamenti",
-        bedroomsCount: "4 camere da letto",
-        bedsDetail: "4 camere da letto (0 divani letto)",
-        sofaBedsCount: 0,
-        sofaBedsLabel: "0 divani letto",
-        bathroomsCount: "2 bagni",
-        livingRoomsCount: "2 soggiorni con cucina",
-        distanceOneWayKm: 135,
-        distanceRoundTripKm: 270,
-        driveTimeOneWay: "~1h 35m",
-        fuelPerCar: 35.00,
-        tollsPerCar: 28.00,
-        tollsNote: "Caselli A/R Torino–Arona (A4+A26): ~€28,00 ad auto (€84 per 3 auto)",
-        cancellation: "Cancellazione gratuita prima del 17 dicembre 2026",
-        hasFreeCancel: true,
-        bookingUrl: "https://www.booking.com/Share-d7xzG6a"
-      },
-      {
-        id: 9,
-        sheetNumber: "#5 Altre",
-        name: "Villa Mareyland Saint Jorioz",
-        group: "other",
-        location: "Saint Jorioz (Lago di Annecy), Francia",
-        shortLocation: "Saint-Jorioz, Annecy (Francia 🇫🇷)",
-        regionBadge: "Francia 🇫🇷 • Lago di Annecy",
-        isSwitzerland: false,
-        isBlocked: false,
-        ratingNormalized: 9.1,
-        ratingDisplay: "9.1/10 (22 recensioni)",
-        platform: "Booking.com",
-        hasDirectLink: true,
-        priceAccommodation: 1497,
-        available: true,
-        guestsCapacity: "8 adulti",
-        maxGuests: 8,
-        pricedForGuests: 8,
-        apartmentsCount: "1 villa",
-        bedroomsCount: "4 camere da letto",
-        bedsDetail: "4 camere da letto (0 divani letto)",
-        sofaBedsCount: 0,
-        sofaBedsLabel: "0 divani letto",
-        bathroomsCount: "2 bagni",
-        livingRoomsCount: "1 soggiorno con cucina",
-        distanceOneWayKm: 255,
-        distanceRoundTripKm: 510,
-        driveTimeOneWay: "~3h 05m",
-        fuelPerCar: 66.00,
-        tollsPerCar: 98.00,
-        tollsNote: "Caselli + Traforo del Frejus A/R: ~€98,00 ad auto (€294 per 3 auto)",
-        cancellation: "Cancellazione gratuita prima del 17 dicembre 2026",
-        hasFreeCancel: true,
-        bookingUrl: "https://www.booking.com/Share-vLbdIl"
-      },
-      {
-        id: 10,
-        sheetNumber: "#6 Altre",
-        name: "Pet Friendly Home In Chiavari",
-        group: "other",
-        location: "Chiavari (GE), Italia",
-        shortLocation: "Chiavari (GE) - Liguria",
-        regionBadge: "Liguria • Riviera di Levante",
-        isSwitzerland: false,
-        isBlocked: false,
-        ratingNormalized: 9.0,
-        ratingDisplay: "9.0/10 (3 recensioni)",
-        platform: "Booking.com",
-        hasDirectLink: true,
-        priceAccommodation: 2387,
-        available: true,
-        guestsCapacity: "Max 10 persone",
-        maxGuests: 10,
-        pricedForGuests: 10,
-        apartmentsCount: "1 villa con piscina",
-        bedroomsCount: "5 camere da letto",
-        bedsDetail: "5 camere: Cam. 1: 1 matr. alla francese • Cam. 2: 1 singolo • Cam. 3: 2 singoli • Cam. 4: 1 singolo • Cam. 5: 1 matr. alla francese (0 divani letto)",
-        sofaBedsCount: 0,
-        sofaBedsLabel: "0 divani letto",
-        bathroomsCount: "2 bagni",
-        livingRoomsCount: "1 soggiorno con cucina",
-        distanceOneWayKm: 205,
-        distanceRoundTripKm: 410,
-        driveTimeOneWay: "~2h 15m",
-        fuelPerCar: 53.00,
-        tollsPerCar: 38.00,
-        tollsNote: "Caselli A/R Torino–Chiavari (A21+A7+A12): ~€38,00 ad auto (€114 per 3 auto)",
-        cancellation: "Cancellazione gratuita prima dell'1 dicembre 2026",
-        hasFreeCancel: true,
-        bookingUrl: "https://www.booking.com/hotel/it/amazing-home-in-chiavari-with-outdoor-swimming-pool-and-5-bedrooms.it.html?aid=898224&app_hotel_id=8729999&checkin=2026-12-31&checkout=2027-01-02&from_sn=ios&group_adults=10&group_children=0&label=hotel_details-w32EMd%401792878209&no_rooms=1&req_adults=10&req_children=0&room1=A%2CA%2CA%2CA%2CA%2CA%2CA%2CA%2CA%2CA%2C#RD872999902"
-      },
-      {
-        id: 11,
-        sheetNumber: "#7 Altre",
-        name: "Loft spacieux pour 10 personnes avec terrasse",
-        group: "other",
-        location: "20 Rue Vernier, Nizza, 06000, Francia",
-        shortLocation: "Nizza (Francia 🇫🇷 - Costa Azzurra)",
-        regionBadge: "Francia 🇫🇷 • Costa Azzurra",
-        isSwitzerland: false,
-        isBlocked: false,
-        ratingNormalized: 8.7,
-        ratingDisplay: "8.7/10 (32 recensioni)",
-        platform: "Booking.com",
-        hasDirectLink: true,
-        priceAccommodation: 1122,
-        available: true,
-        guestsCapacity: "10 persone",
-        maxGuests: 10,
-        pricedForGuests: 10,
-        apartmentsCount: "1 appartamento (loft)",
-        bedroomsCount: "4 camere da letto",
-        bedsDetail: "4 camere da letto + 1 divano letto (10 posti letto)",
-        sofaBedsCount: 1,
-        sofaBedsLabel: "1 divano letto",
-        bathroomsCount: "2 bagni",
-        livingRoomsCount: "1 ampio soggiorno con terrazza",
-        distanceOneWayKm: 260,
-        distanceRoundTripKm: 520,
-        driveTimeOneWay: "~3h 10m",
-        fuelPerCar: 67.00,
-        tollsPerCar: 46.00,
-        tollsNote: "Caselli A/R Torino–Nizza (A6+A10+A8): ~€46,00 ad auto (€138 per 3 auto)",
-        cancellation: "Cancellazione gratuita prima del 10 dicembre 2026",
-        hasFreeCancel: true,
-        bookingUrl: "https://www.booking.com/Share-Dfbfrd"
-      },
-      {
-        id: 12,
-        sheetNumber: "#8 Altre",
-        name: "Villa Ida",
-        group: "other",
-        location: "Frazione Castelrotto 12, Mussotto (Guarene/Alba), Italia",
-        shortLocation: "Mussotto / Alba (CN) - Langhe",
-        regionBadge: "Piemonte • Langhe & Roero",
-        isSwitzerland: false,
-        isBlocked: false,
-        ratingNormalized: 8.6,
-        ratingDisplay: "8.6/10 (8 recensioni)",
-        platform: "Booking.com",
-        hasDirectLink: true,
-        priceAccommodation: 1907,
-        available: true,
-        guestsCapacity: "8 adulti",
-        maxGuests: 8,
-        pricedForGuests: 8,
-        apartmentsCount: "1 villa",
-        bedroomsCount: "4 camere da letto",
-        bedsDetail: "4 camere da letto (0 divani letto)",
-        sofaBedsCount: 0,
-        sofaBedsLabel: "0 divani letto",
-        bathroomsCount: "2 bagni",
-        livingRoomsCount: "1 soggiorno con cucina",
-        distanceOneWayKm: 62,
-        distanceRoundTripKm: 124,
-        driveTimeOneWay: "~1h 00m",
-        fuelPerCar: 16.00,
-        tollsPerCar: 9.00,
-        tollsNote: "Caselli A/R Torino–Alba: ~€9,00 ad auto (€27 per 3 auto)",
-        cancellation: "Non rimborsabile",
-        hasFreeCancel: false,
-        bookingUrl: "https://www.booking.com/Share-vB1Sh4"
+        id: 6, sheetNumber: "#2 Altre (CH)", name: "Schloss Locarno", group: "other",
+        location: "Locarno, Svizzera", isSwitzerland: true, isBlocked: false,
+        ratingNormalized: 9.3, ratingDisplay: "9.3/10", platform: "Booking.com",
+        priceAccommodation: 1829, guestsCapacity: "10 persone", apartmentsCount: "2 appartamenti",
+        bedroomsCount: "3 camere", bedsDetail: "3 camere + 2 divani letto", sofaBedsCount: 2, sofaBedsLabel: "2 divani letto",
+        bathroomsCount: "2 bagni", livingRoomsCount: "2 soggiorni", distanceRoundTripKm: 430,
+        fuelPerCar: 55, tollsPerCar: 28, tollsNote: "Caselli + Vignetta CH €43", cancellation: "Cancellazione gratuita",
+        hasFreeCancel: true, bookingUrl: "https://www.booking.com/Share-xJ5iM6P"
       }
     ];
 
-    // Load from localStorage or fallback to defaultProperties
     let properties = [];
+    let currentFilter = 'all';
+
     function loadProperties() {
       try {
         const saved = localStorage.getItem(STORAGE_KEY);
-        if (saved) {
-          properties = JSON.parse(saved);
-        } else {
-          properties = JSON.parse(JSON.stringify(defaultProperties));
-        }
+        properties = saved ? JSON.parse(saved) : JSON.parse(JSON.stringify(defaultProperties));
       } catch (err) {
         properties = JSON.parse(JSON.stringify(defaultProperties));
-      }
-    }
-
-    function savePropertiesToStorage() {
-      try {
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(properties));
-      } catch (err) {
-        console.error('Impossibile salvare in localStorage:', err);
       }
     }
 
@@ -1040,946 +150,71 @@
       renderAll();
     }
 
-    // Helper: format Euro
-    function formatEuro(val, decimals = 0) {
-      return new Intl.NumberFormat('it-IT', {
-        style: 'currency',
-        currency: 'EUR',
-        minimumFractionDigits: decimals,
-        maximumFractionDigits: decimals
-      }).format(val);
-    }
-
-    // Strict rule: Swiss Vignette (€43/car) ONLY applies to properties located in Switzerland
-    function isSwissActiveForProperty(prop) {
-      return Boolean(prop.isSwitzerland);
-    }
-
-    // Calculate all costs for a property based on current state
-    function calculatePropertyCosts(prop) {
-      const cars = state.cars;
-      const effectiveGuests = state.guestMode === 'capacity'
-        ? (prop.maxGuests || state.guests)
-        : state.guests;
-
-      const fuelTotal = prop.fuelPerCar * cars;
-      const tollsTotal = prop.tollsPerCar * cars;
-      const swissActive = isSwissActiveForProperty(prop);
-      const swissTotal = swissActive ? (43 * cars) : 0;
-
-      const travelPerCar = prop.fuelPerCar + prop.tollsPerCar + (swissActive ? 43 : 0);
-      const travelTotal = fuelTotal + tollsTotal + swissTotal;
-      const grandTotalWithTravel = prop.priceAccommodation + travelTotal;
-
-      const displayTotal = state.includeTravel ? grandTotalWithTravel : prop.priceAccommodation;
-      const perPersonSelectedGuests = displayTotal / effectiveGuests;
-      const perPersonMaxCapacity = displayTotal / (prop.maxGuests || effectiveGuests);
-
-      return {
-        effectiveGuests,
-        fuelTotal,
-        tollsTotal,
-        swissActive,
-        swissTotal,
-        travelPerCar,
-        travelTotal,
-        grandTotalWithTravel,
-        displayTotal,
-        perPersonSelectedGuests,
-        perPersonMaxCapacity
-      };
-    }
-
-    // Controls Handlers
-    function setGuestMode(mode) {
-      state.guestMode = mode;
-      const fixedBtn = document.getElementById('guestModeFixedBtn');
-      const capBtn = document.getElementById('guestModeCapBtn');
-      const fixedCtrls = document.getElementById('fixedGuestsControls');
-
-      if (mode === 'fixed') {
-        fixedBtn.className = "px-2 py-0.5 rounded text-[11px] font-extrabold bg-indigo-600 text-white transition";
-        capBtn.className = "px-2 py-0.5 rounded text-[11px] font-bold bg-slate-200 text-slate-700 hover:bg-slate-300 transition";
-        fixedCtrls.style.opacity = "1";
-        fixedCtrls.style.pointerEvents = "auto";
-      } else {
-        capBtn.className = "px-2 py-0.5 rounded text-[11px] font-extrabold bg-indigo-600 text-white transition";
-        fixedBtn.className = "px-2 py-0.5 rounded text-[11px] font-bold bg-slate-200 text-slate-700 hover:bg-slate-300 transition";
-        fixedCtrls.style.opacity = "0.45";
-        fixedCtrls.style.pointerEvents = "none";
-      }
+    function setFilter(filter) {
+      currentFilter = filter;
       renderAll();
     }
 
-    function changeGuests(delta) {
-      const next = Math.min(14, Math.max(6, state.guests + delta));
-      state.guests = next;
-      document.getElementById('guestsDisplay').textContent = `${next} pers.`;
-      renderAll();
-    }
-
-    function changeCars(delta) {
-      const next = Math.min(5, Math.max(1, state.cars + delta));
-      state.cars = next;
-      document.getElementById('carsDisplay').textContent = `${next} auto`;
-      document.getElementById('carsLabelInline').textContent = next;
-      document.getElementById('bannerCarsCount').textContent = `${next} auto`;
-      document.getElementById('swissSummaryLabel').textContent = `Solo Locarno e Brissago (+€${43 * next} per ${next} auto)`;
-      renderAll();
-    }
-
-    function toggleIncludeTravel(checked) {
-      state.includeTravel = checked;
-      renderAll();
-    }
-
-    function setFilter(filterKey) {
-      state.filter = filterKey;
-      document.querySelectorAll('.filter-btn').forEach(btn => {
-        if (btn.id === 'filter-swiss') {
-          btn.className = "filter-btn px-3 py-1.5 rounded-lg text-xs font-bold transition whitespace-nowrap bg-red-50 text-red-700 border border-red-200 hover:bg-red-100";
-        } else {
-          btn.className = "filter-btn px-3 py-1.5 rounded-lg text-xs font-bold transition whitespace-nowrap bg-slate-100 text-slate-700 hover:bg-slate-200";
-        }
-      });
-      const activeBtn = document.getElementById(`filter-${filterKey}`);
-      if (activeBtn) {
-        activeBtn.className = "filter-btn px-3 py-1.5 rounded-lg text-xs font-bold transition whitespace-nowrap bg-slate-900 text-white shadow";
-      }
-      renderAll();
-    }
-
-    function handleSearch(query) {
-      state.search = query.trim().toLowerCase();
-      renderAll();
-    }
-
-    function handleSort(sortKey) {
-      state.sortBy = sortKey;
-      renderAll();
-    }
-
-    // Edit Modal Logic
-    function openEditModal(propId) {
-      const prop = properties.find(p => p.id === propId);
-      if (!prop) return;
-
-      document.getElementById('editPropId').value = prop.id;
-      document.getElementById('editName').value = prop.name;
-      document.getElementById('editLocation').value = prop.location;
-      document.getElementById('editPrice').value = prop.priceAccommodation;
-      document.getElementById('editRating').value = prop.ratingNormalized;
-      document.getElementById('editRatingDisplay').value = prop.ratingDisplay;
-      document.getElementById('editIsSwiss').value = prop.isSwitzerland ? 'true' : 'false';
-      document.getElementById('editApartments').value = prop.apartmentsCount;
-      document.getElementById('editBedrooms').value = prop.bedroomsCount;
-      document.getElementById('editBathrooms').value = prop.bathroomsCount;
-      document.getElementById('editLivingRooms').value = prop.livingRoomsCount;
-      document.getElementById('editBedsDetail').value = prop.bedsDetail;
-      document.getElementById('editSofaLabel').value = prop.sofaBedsLabel;
-      document.getElementById('editDistanceRoundTrip').value = prop.distanceRoundTripKm;
-      document.getElementById('editFuelPerCar').value = prop.fuelPerCar;
-      document.getElementById('editTollsPerCar').value = prop.tollsPerCar;
-      document.getElementById('editGroup').value = prop.group;
-      document.getElementById('editBookingUrl').value = prop.bookingUrl;
-
-      document.getElementById('editModal').classList.remove('hidden');
-    }
-
-    function closeEditModal() {
-      document.getElementById('editModal').classList.add('hidden');
-    }
-
-    function saveEditedProperty(e) {
-      e.preventDefault();
-      const id = parseInt(document.getElementById('editPropId').value, 10);
-      const prop = properties.find(p => p.id === id);
-      if (!prop) return;
-
-      prop.name = document.getElementById('editName').value.trim();
-      prop.location = document.getElementById('editLocation').value.trim();
-      prop.priceAccommodation = parseFloat(document.getElementById('editPrice').value) || 0;
-      prop.available = prop.priceAccommodation > 0;
-      prop.ratingNormalized = parseFloat(document.getElementById('editRating').value) || 0;
-      prop.ratingDisplay = document.getElementById('editRatingDisplay').value.trim();
-      prop.isSwitzerland = document.getElementById('editIsSwiss').value === 'true';
-      prop.group = document.getElementById('editGroup').value;
-      prop.regionBadge = prop.isSwitzerland
-        ? "🇨🇭 Svizzera (Vignetta Inclusa)"
-        : (prop.group === 'como' ? "Lago di Como" : prop.location);
-      prop.apartmentsCount = document.getElementById('editApartments').value.trim();
-      prop.bedroomsCount = document.getElementById('editBedrooms').value.trim();
-      prop.bathroomsCount = document.getElementById('editBathrooms').value.trim();
-      prop.livingRoomsCount = document.getElementById('editLivingRooms').value.trim();
-      prop.bedsDetail = document.getElementById('editBedsDetail').value.trim();
-      prop.sofaBedsLabel = document.getElementById('editSofaLabel').value.trim();
-      prop.sofaBedsCount = (prop.sofaBedsLabel === '0' || prop.sofaBedsLabel.toLowerCase().startsWith('0 ')) ? 0 : 1;
-      prop.distanceRoundTripKm = parseInt(document.getElementById('editDistanceRoundTrip').value, 10) || 350;
-      prop.distanceOneWayKm = Math.round(prop.distanceRoundTripKm / 2);
-      prop.fuelPerCar = parseFloat(document.getElementById('editFuelPerCar').value) || 0;
-      prop.tollsPerCar = parseFloat(document.getElementById('editTollsPerCar').value) || 0;
-      prop.bookingUrl = document.getElementById('editBookingUrl').value.trim();
-      prop.platform = 'Booking.com';
-      prop.hasDirectLink = true;
-
-      savePropertiesToStorage();
-      closeEditModal();
-      renderAll();
-    }
-
-    // Filter & Sort Helper
-    function getFilteredAndSorted(groupName) {
-      return properties
-        .filter(p => p.group === groupName)
-        .filter(p => {
-          if (state.filter === 'como' && p.group !== 'como') return false;
-          if (state.filter === 'other' && p.group !== 'other') return false;
-          if (state.filter === 'swiss' && !p.isSwitzerland) return false;
-          if (state.filter === 'free-cancel' && !p.hasFreeCancel) return false;
-          if (state.filter === 'no-sofa' && p.sofaBedsCount > 0) return false;
-          if (state.filter === 'cap-10' && (p.maxGuests || 8) < 10) return false;
-          if (state.search) {
-            const haystack = `${p.name} ${p.location} ${p.regionBadge} ${p.bedsDetail} ${p.apartmentsCount} ${p.sofaBedsLabel} ${p.cancellation} ${p.isSwitzerland ? 'svizzera ch vignetta locarno brissago' : ''}`.toLowerCase();
-            if (!haystack.includes(state.search)) return false;
-          }
-          return true;
-        })
-        .sort((a, b) => {
-          if (state.sortBy === 'rating-desc') {
-            if (b.ratingNormalized !== a.ratingNormalized) {
-              return b.ratingNormalized - a.ratingNormalized;
-            }
-            return a.priceAccommodation - b.priceAccommodation;
-          }
-          if (state.sortBy === 'price-asc') {
-            const costA = calculatePropertyCosts(a).displayTotal;
-            const costB = calculatePropertyCosts(b).displayTotal;
-            return costA - costB;
-          }
-          if (state.sortBy === 'distance-asc') {
-            return a.distanceRoundTripKm - b.distanceRoundTripKm;
-          }
-          return b.ratingNormalized - a.ratingNormalized;
-        });
-    }
-
-    // Render Single Property Card (CLEAN HEADER WITHOUT FAKE PHOTOS)
-    function renderPropertyCard(prop, rankIndex) {
-      const costs = calculatePropertyCosts(prop);
-      const isSelectedForCompare = state.compareIds.includes(prop.id);
-
-      // Header theme based on Blocked status / Switzerland / Default
-      let headerGradient = "from-slate-900 via-indigo-950 to-slate-900 border-indigo-900";
-      let ctaBtnStyle = "bg-indigo-600 hover:bg-indigo-500 text-white shadow-indigo-950/50";
-      let cardBorderStyle = "border-slate-200/90";
-
-      if (prop.isBlocked) {
-        headerGradient = "from-emerald-950 via-teal-900 to-slate-900 border-emerald-700";
-        ctaBtnStyle = "bg-emerald-500 hover:bg-emerald-400 text-slate-950 shadow-emerald-950/50";
-        cardBorderStyle = "border-emerald-500 ring-2 ring-emerald-500/25";
-      } else if (prop.isSwitzerland) {
-        headerGradient = "from-red-950 via-red-900 to-slate-900 border-red-700";
-        ctaBtnStyle = "bg-red-600 hover:bg-red-500 text-white shadow-red-950/50";
-        cardBorderStyle = "border-red-500 ring-2 ring-red-500/20";
-      }
-
-      // Rating badge color
-      let ratingColor = "bg-emerald-500 text-white";
-      if (prop.ratingNormalized >= 9.4) ratingColor = "bg-amber-400 text-slate-950";
-      else if (prop.ratingNormalized < 8.8) ratingColor = "bg-sky-500 text-white";
-
-      // Sofa bed badge style
-      const isZeroSofa = prop.sofaBedsCount === 0;
-      const sofaBadgeStyle = isZeroSofa
-        ? "bg-emerald-50 border-emerald-300 text-emerald-900"
-        : "bg-amber-50 border-amber-300 text-amber-900";
-
-      // Cancellation status badge style
-      let cancelBadgeClass = "bg-emerald-100 text-emerald-900 border border-emerald-300";
-      let cancelIcon = "✅";
-      if (prop.isBlocked) {
-        cancelBadgeClass = "bg-emerald-600 text-white shadow-sm";
-        cancelIcon = "🔒";
-      } else if (!prop.hasFreeCancel) {
-        cancelBadgeClass = "bg-rose-100 text-rose-900 border border-rose-300";
-        cancelIcon = "⚠️";
-      }
-
-      const ctaLabel = `📸 Vai alle foto e all'annuncio su Booking.com`;
-
-      return `
-        <article class="bg-white rounded-2xl border ${cardBorderStyle} card-shadow transition-all duration-200 flex flex-col overflow-hidden">
-          
-          <!-- CLEAN TYPOGRAPHIC HEADER BANNER (NO FAKE PHOTOS) -->
-          <div class="bg-gradient-to-br ${headerGradient} text-white p-5 sm:p-6 border-b relative">
-            
-            <!-- Top Row: Rank, Platform, Swiss / Blocked Badge & Rating -->
-            <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
-              <div class="flex flex-wrap items-center gap-1.5">
-                <span class="px-2.5 py-1 rounded-lg bg-white/10 text-white font-extrabold text-xs border border-white/15">
-                  #${rankIndex + 1} • ${prop.sheetNumber}
-                </span>
-                <span class="px-2.5 py-1 rounded-lg bg-blue-500/20 text-blue-200 border border-blue-400/30 font-bold text-xs">
-                  ${prop.platform}
-                </span>
-                <span class="px-2.5 py-1 rounded-lg bg-white/15 text-white font-bold text-xs">
-                  👥 ${prop.guestsCapacity}
-                </span>
-                ${prop.isBlocked ? `
-                  <span class="px-2.5 py-1 rounded-lg bg-emerald-400 text-slate-950 font-extrabold text-xs shadow">
-                    🔒 BLOCCATO (CANC. GRATUITA 28 DIC)
-                  </span>
-                ` : ''}
-                ${prop.isSwitzerland ? `
-                  <span class="px-2.5 py-1 rounded-lg bg-red-600 text-white font-extrabold text-xs shadow">
-                    🇨🇭 SVIZZERA (+Vignetta €43/auto)
-                  </span>
-                ` : ''}
-              </div>
-
-              <!-- Rating Pill -->
-              <div class="${ratingColor} px-3 py-1 rounded-xl font-extrabold text-xs sm:text-sm shadow flex items-center gap-1.5">
-                <span>⭐</span>
-                <span>${prop.ratingDisplay}</span>
-              </div>
-            </div>
-
-            <!-- Property Title & Full Address / Location -->
-            <div class="mb-4">
-              <h3 class="text-xl sm:text-2xl font-extrabold text-white tracking-tight leading-snug">
-                ${prop.name}
-              </h3>
-              <div class="flex flex-wrap items-center gap-x-3 gap-y-1 mt-1.5 text-xs sm:text-sm text-slate-200 font-medium">
-                <span class="inline-flex items-center gap-1 text-white font-semibold">
-                  <span>📍</span>
-                  <span>${prop.location}</span>
-                </span>
-              </div>
-              <div class="flex flex-wrap items-center gap-x-3 gap-y-1 mt-1 text-xs text-indigo-200 font-semibold">
-                <span>🚗 Da Torino: <strong>~${prop.distanceOneWayKm || Math.round(prop.distanceRoundTripKm / 2)} km sola andata (${prop.distanceRoundTripKm} km A/R)</strong></span>
-                ${prop.driveTimeOneWay ? `<span>• ⏱️ Tempo: <strong>${prop.driveTimeOneWay}</strong></span>` : ''}
-              </div>
-            </div>
-
-            <!-- PROMINENT BUTTON TO VIEW REAL PHOTOS & LISTING ON BOOKING.COM -->
-            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 pt-2 border-t border-white/10">
-              <a href="${prop.bookingUrl}" target="_blank" rel="noopener noreferrer"
-                 class="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl font-extrabold text-xs sm:text-sm transition shadow-lg ${ctaBtnStyle}">
-                <span>${ctaLabel}</span>
-                <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-              </a>
-              <button onclick="openEditModal(${prop.id})"
-                      class="px-3.5 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs transition border border-white/15 shrink-0">
-                ✏️ Modifica dati
-              </button>
-            </div>
-          </div>
-
-          <!-- CARD BODY -->
-          <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-4">
-
-            <!-- HIGHLIGHTED SPECS GRID (TIPOLOGIA/APPARTAMENTI, CAMERE, BAGNI, SOGGIORNI) -->
-            <div>
-              <!-- Cancellation Status Highlight Bar -->
-              <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
-                <span class="text-[11px] font-extrabold uppercase tracking-wider text-slate-400">
-                  Dati Evidenziati & Condizioni Prenotazione
-                </span>
-                <span class="px-2.5 py-1 rounded-lg text-xs font-extrabold ${cancelBadgeClass}">
-                  ${cancelIcon} ${prop.cancellation}
-                </span>
-              </div>
-
-              <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
-                <!-- N. Appartamenti / Tipologia -->
-                <div class="p-3 rounded-xl bg-indigo-50/80 border border-indigo-200">
-                  <span class="block text-[10px] font-extrabold uppercase text-indigo-700">🏢 Tipologia / Unità</span>
-                  <span class="text-xs sm:text-sm font-extrabold text-slate-900 mt-0.5 block leading-snug">${prop.apartmentsCount}</span>
-                </div>
-                <!-- N. Camere -->
-                <div class="p-3 rounded-xl bg-indigo-50/80 border border-indigo-200">
-                  <span class="block text-[10px] font-extrabold uppercase text-indigo-700">🛏️ N. Camere</span>
-                  <span class="text-xs sm:text-sm font-extrabold text-slate-900 mt-0.5 block leading-snug">${prop.bedroomsCount}</span>
-                </div>
-                <!-- N. Bagni -->
-                <div class="p-3 rounded-xl bg-indigo-50/80 border border-indigo-200">
-                  <span class="block text-[10px] font-extrabold uppercase text-indigo-700">🚿 N. Bagni</span>
-                  <span class="text-xs sm:text-sm font-extrabold text-slate-900 mt-0.5 block leading-snug">${prop.bathroomsCount}</span>
-                </div>
-                <!-- N. Soggiorni -->
-                <div class="p-3 rounded-xl bg-indigo-50/80 border border-indigo-200">
-                  <span class="block text-[10px] font-extrabold uppercase text-indigo-700">🛋️ N. Soggiorni</span>
-                  <span class="text-xs sm:text-sm font-extrabold text-slate-900 mt-0.5 block leading-snug">${prop.livingRoomsCount}</span>
-                </div>
-              </div>
-
-              <!-- Tipologie Letti e N. Divani Letto Highlight Box -->
-              <div class="mt-2.5 p-3.5 rounded-xl border-2 ${sofaBadgeStyle} flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                <div class="flex items-start sm:items-center gap-2.5">
-                  <span class="text-lg shrink-0">${isZeroSofa ? '🛏️' : '🛋️'}</span>
-                  <div>
-                    <span class="text-[10px] font-extrabold uppercase tracking-wider block opacity-80">Camere, Disposizione Letti & Divani Letto (${prop.guestsCapacity})</span>
-                    <span class="text-xs sm:text-sm font-extrabold block leading-snug">${prop.bedsDetail}</span>
-                  </div>
-                </div>
-                <div class="shrink-0 self-start sm:self-center">
-                  <span class="px-3 py-1.5 rounded-lg text-xs font-extrabold inline-block ${isZeroSofa ? 'bg-emerald-600 text-white' : 'bg-amber-500 text-white'}">
-                    Divani letto: ${prop.sofaBedsLabel}
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            <!-- TRAVEL & PRICE BREAKDOWN -->
-            <div class="rounded-xl bg-slate-900 text-white p-4 space-y-3">
-              <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
-                <div>
-                  <span class="text-[11px] uppercase tracking-wider font-bold text-slate-400 block">
-                    Prezzo Totale (${state.includeTravel ? `Alloggio + Viaggio ${state.cars} Auto` : 'Solo Alloggio'})
-                  </span>
-                  <div class="flex items-baseline gap-2 mt-0.5">
-                    <span class="text-2xl sm:text-3xl font-extrabold text-white">${formatEuro(costs.displayTotal, 0)}</span>
-                    <span class="text-xs text-slate-300">(${state.includeTravel ? `Alloggio: ${formatEuro(prop.priceAccommodation, 2)}` : `+ Viaggio: ${formatEuro(costs.travelTotal, 0)}`})</span>
-                  </div>
-                </div>
-
-                <!-- Price Per Person Box -->
-                <div class="bg-indigo-600 px-4 py-2 rounded-xl text-right shadow-inner">
-                  <span class="block text-[10px] uppercase font-extrabold text-indigo-200">
-                    Diviso per Persona (÷ ${costs.effectiveGuests} pers.)
-                  </span>
-                  <span class="text-xl sm:text-2xl font-extrabold text-white">${formatEuro(costs.perPersonSelectedGuests, 2)}</span>
-                  <span class="block text-[10px] text-indigo-200">
-                    Solo casa: ${formatEuro(prop.priceAccommodation / costs.effectiveGuests, 2)}/p
-                    ${prop.maxGuests !== costs.effectiveGuests ? ` • Su ${prop.maxGuests}p: ${formatEuro(costs.perPersonMaxCapacity, 2)}/p` : ''}
-                  </span>
-                </div>
-              </div>
-
-              <!-- Detailed Travel Row (1 Auto vs N Auto + Swiss Vignette ONLY if in CH) -->
-              <div class="grid ${costs.swissActive ? 'grid-cols-2 sm:grid-cols-4' : 'grid-cols-3'} gap-2 text-xs">
-                <div class="bg-slate-800/90 rounded-lg p-2.5">
-                  <span class="text-slate-400 block text-[10px]">🏠 Alloggio Totale</span>
-                  <span class="font-bold text-white text-sm">${formatEuro(prop.priceAccommodation, 2)}</span>
-                  <span class="block text-[10px] text-slate-400">${prop.guestsCapacity}</span>
-                </div>
-                <div class="bg-slate-800/90 rounded-lg p-2.5">
-                  <span class="text-slate-400 block text-[10px]">🛣️ Caselli A/R (${state.cars} auto)</span>
-                  <span class="font-bold text-amber-300 text-sm">${formatEuro(costs.tollsTotal, 2)}</span>
-                  <span class="block text-[10px] text-slate-400">1 auto: ${formatEuro(prop.tollsPerCar, 2)}</span>
-                </div>
-                <div class="bg-slate-800/90 rounded-lg p-2.5">
-                  <span class="text-slate-400 block text-[10px]">⛽ Benzina A/R (${state.cars} auto)</span>
-                  <span class="font-bold text-amber-300 text-sm">${formatEuro(costs.fuelTotal, 2)}</span>
-                  <span class="block text-[10px] text-slate-400">1 auto: ${formatEuro(prop.fuelPerCar, 2)}</span>
-                </div>
-                ${costs.swissActive ? `
-                  <div class="bg-red-950/90 border border-red-500/60 rounded-lg p-2.5">
-                    <span class="text-red-300 block text-[10px] font-bold">🇨🇭 Vignetta CH (${state.cars} auto)</span>
-                    <span class="font-extrabold text-red-200 text-sm">+${formatEuro(costs.swissTotal, 0)}</span>
-                    <span class="block text-[10px] text-red-300">€43,00 × ${state.cars} auto</span>
-                  </div>
-                ` : ''}
-              </div>
-            </div>
-
-            <!-- FOOTER ACTIONS -->
-            <div class="flex flex-wrap items-center justify-between gap-2 pt-1 text-xs text-slate-500">
-              <span>${prop.tollsNote}</span>
-              <button onclick="toggleCompare(${prop.id})"
-                      class="px-3.5 py-2 rounded-xl font-bold text-xs transition border shrink-0 ${isSelectedForCompare ? 'bg-amber-100 border-amber-400 text-amber-900' : 'bg-slate-100 border-slate-200 text-slate-700 hover:bg-slate-200'}">
-                ${isSelectedForCompare ? '✓ Selezionata per Confronto' : '⚖️ Aggiungi a Confronto'}
-              </button>
-            </div>
-
-          </div>
-        </article>
-      `;
-    }
-
-    // Render Full Bottom Summary Table
-    function renderFullSummaryTable() {
+    function renderAll() {
+      const comoGrid = document.getElementById('comoGrid');
+      const otherGrid = document.getElementById('otherGrid');
       const tbody = document.getElementById('fullComparisonTableBody');
-      if (!tbody) return;
 
-      document.getElementById('tableSummaryGuests').textContent = state.guestMode === 'capacity'
-        ? 'capienza casa (8 o 10)'
-        : `${state.guests} persone`;
-      document.getElementById('tableSummaryCars').textContent = state.cars;
-      document.getElementById('thCarsCount').textContent = state.cars;
+      if (!comoGrid || !otherGrid || !tbody) return;
 
-      const comoList = getFilteredAndSorted('como');
-      const otherList = getFilteredAndSorted('other');
-      const allOrdered = [...comoList, ...otherList];
+      const comoList = properties.filter(p => p.group === 'como');
+      const otherList = properties.filter(p => p.group === 'other');
 
-      tbody.innerHTML = allOrdered.map((p) => {
-        const c = calculatePropertyCosts(p);
-        const isZeroSofa = p.sofaBedsCount === 0;
-        return `
-          <tr class="hover:bg-slate-50 transition ${p.isBlocked ? 'bg-emerald-50/50' : p.isSwitzerland ? 'bg-red-50/40' : ''}">
-            <td class="p-3 font-bold text-slate-700 whitespace-nowrap">
-              <span class="inline-block px-2 py-0.5 rounded text-[10px] font-extrabold ${p.group === 'como' ? 'bg-indigo-100 text-indigo-800' : 'bg-amber-100 text-amber-900'}">
-                ${p.group === 'como' ? 'COMO' : 'ALTRE'}
-              </span>
-              <span class="ml-1 text-slate-500">${p.sheetNumber}</span>
-            </td>
-            <td class="p-3 min-w-[220px]">
-              <div class="font-extrabold text-slate-900 text-xs sm:text-sm flex items-center gap-1.5">
-                <span>${p.name}</span>
-                ${p.isBlocked ? `<span class="px-1.5 py-0.5 rounded bg-emerald-600 text-white text-[10px] font-extrabold">🔒 BLOCCATO</span>` : ''}
-                ${p.isSwitzerland ? `<span class="px-1.5 py-0.5 rounded bg-red-600 text-white text-[10px] font-extrabold">🇨🇭 CH</span>` : ''}
-              </div>
-              <div class="text-[11px] font-semibold mt-0.5 ${p.hasFreeCancel ? 'text-emerald-700' : 'text-rose-600'}">
-                ${p.hasFreeCancel ? '✅' : '⚠️'} ${p.cancellation}
-              </div>
-              <div class="flex items-center gap-2 mt-1.5">
-                <a href="${p.bookingUrl}" target="_blank" rel="noopener noreferrer"
-                   class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md text-[11px] font-bold text-white bg-indigo-600 hover:bg-indigo-500">
-                  <span>📸 Foto & Annuncio Booking ↗</span>
-                </a>
-                <button onclick="openEditModal(${p.id})" class="text-[11px] text-slate-500 hover:text-indigo-600 font-semibold">✏️ Modifica</button>
-              </div>
-            </td>
-            <td class="p-3 min-w-[180px]">
-              <div class="font-bold text-slate-800">${p.location}</div>
-              <div class="text-[11px] text-slate-500 mt-0.5">🚗 ~${p.distanceOneWayKm || Math.round(p.distanceRoundTripKm / 2)} km (${p.distanceRoundTripKm} km A/R • ${p.driveTimeOneWay || ''})</div>
-            </td>
-            <td class="p-3 whitespace-nowrap">
-              <span class="px-2.5 py-1 rounded-md bg-emerald-100 text-emerald-900 font-extrabold text-xs">⭐ ${p.ratingDisplay}</span>
-            </td>
-            <td class="p-3">
-              <div class="font-extrabold text-slate-900">${p.apartmentsCount}</div>
-              <div class="text-[11px] text-indigo-700 font-bold">👥 ${p.guestsCapacity}</div>
-            </td>
-            <td class="p-3 min-w-[230px]">
-              <div class="font-extrabold text-indigo-950">${p.bedroomsCount}</div>
-              <div class="text-slate-700 text-[11px] mt-0.5">${p.bedsDetail}</div>
-              <span class="inline-block mt-1 px-2 py-0.5 rounded text-[10px] font-extrabold ${isZeroSofa ? 'bg-emerald-100 text-emerald-800' : 'bg-amber-100 text-amber-900'}">
-                Divani letto: ${p.sofaBedsLabel}
-              </span>
-            </td>
-            <td class="p-3 whitespace-nowrap">
-              <div class="font-bold text-slate-800">🚿 ${p.bathroomsCount}</div>
-              <div class="text-[11px] text-slate-500">🛋️ ${p.livingRoomsCount}</div>
-            </td>
-            <td class="p-3 whitespace-nowrap font-extrabold text-slate-900">
-              ${formatEuro(p.priceAccommodation, 2)}
-            </td>
-            <td class="p-3 whitespace-nowrap text-[11px]">
-              <div>🛣️ Caselli: <strong>${formatEuro(c.tollsTotal, 0)}</strong></div>
-              <div>⛽ Benzina: <strong>${formatEuro(c.fuelTotal, 0)}</strong></div>
-              ${c.swissActive ? `<div class="text-red-600 font-extrabold">🇨🇭 Vignetta: +€${c.swissTotal}</div>` : '<div class="text-slate-400">Vignetta: €0</div>'}
-            </td>
-            <td class="p-3 whitespace-nowrap bg-indigo-50/60">
-              <div class="text-sm font-extrabold text-indigo-700">${formatEuro(c.perPersonSelectedGuests, 2)} / pers.</div>
-              <div class="text-[11px] font-bold text-slate-700">Tot: ${formatEuro(c.displayTotal, 0)} (÷${c.effectiveGuests}p)</div>
-            </td>
-          </tr>
-        `;
-      }).join('');
+      document.getElementById('comoCountBadge').textContent = comoList.length;
+      document.getElementById('otherCountBadge').textContent = otherList.length;
+
+      document.getElementById('section-como').style.display = (currentFilter === 'other') ? 'none' : 'block';
+      document.getElementById('section-other').style.display = (currentFilter === 'como') ? 'none' : 'block';
+
+      comoGrid.innerHTML = comoList.map(p => createCardHtml(p)).join('');
+      otherGrid.innerHTML = otherList.map(p => createCardHtml(p)).join('');
+
+      tbody.innerHTML = [...comoList, ...otherList].map(p => `
+        <tr>
+          <td class="p-3 font-extrabold">${p.name}</td>
+          <td class="p-3">${p.location}</td>
+          <td class="p-3">⭐ ${p.ratingDisplay}</td>
+          <td class="p-3">${p.bedsDetail}</td>
+          <td class="p-3 font-bold">€ ${p.priceAccommodation}</td>
+        </tr>
+      `).join('');
     }
 
-    // Comparison Drawer/Modal Logic
-    function toggleCompare(propId) {
-      const idx = state.compareIds.indexOf(propId);
-      if (idx > -1) {
-        state.compareIds.splice(idx, 1);
-      } else {
-        if (state.compareIds.length >= 5) {
-          state.compareIds.shift();
-        }
-        state.compareIds.push(propId);
-      }
-      renderAll();
-    }
-
-    function clearComparison() {
-      state.compareIds = [];
-      renderAll();
-      renderComparisonTable();
-    }
-
-    function openComparisonModal() {
-      renderComparisonTable();
-      document.getElementById('comparisonModal').classList.remove('hidden');
-    }
-
-    function closeComparisonModal() {
-      document.getElementById('comparisonModal').classList.add('hidden');
-    }
-
-    // =========================================================
-    // SOCIAL PREVIEW CARD ("IMMAGININA DEL SITO" 1200x630) LOGIC
-    // =========================================================
-    function drawSocialPreviewCanvas() {
-      const canvas = document.getElementById('socialPreviewCanvas');
-      if (!canvas) return;
-      const ctx = canvas.getContext('2d');
-      const W = 1200;
-      const H = 630;
-
-      // Background Gradient
-      const grad = ctx.createLinearGradient(0, 0, W, H);
-      grad.addColorStop(0, '#0f172a');
-      grad.addColorStop(0.55, '#1e1b4b');
-      grad.addColorStop(1, '#111827');
-      ctx.fillStyle = grad;
-      ctx.fillRect(0, 0, W, H);
-
-      // Subtle decorative grid dots
-      ctx.fillStyle = 'rgba(129, 140, 248, 0.14)';
-      for (let x = 40; x < W; x += 40) {
-        for (let y = 40; y < H; y += 40) {
-          ctx.beginPath();
-          ctx.arc(x, y, 2, 0, Math.PI * 2);
-          ctx.fill();
-        }
-      }
-
-      // Top Pill Badge
-      ctx.fillStyle = 'rgba(16, 185, 129, 0.25)';
-      ctx.strokeStyle = 'rgba(110, 231, 183, 0.5)';
-      ctx.lineWidth = 2;
-      ctx.beginPath();
-      if (ctx.roundRect) {
-        ctx.roundRect(60, 46, 780, 48, 24);
-      } else {
-        ctx.rect(60, 46, 780, 48);
-      }
-      ctx.fill();
-      ctx.stroke();
-
-      ctx.fillStyle = '#d1fae5';
-      ctx.font = 'bold 20px Inter, sans-serif';
-      ctx.fillText('🎆 31 DIC 2026 – 2 GEN 2027 • DA TORINO (3 AUTO) • 🔒 THELUXE BLOCCATA', 84, 77);
-
-      // Main Title
-      ctx.fillStyle = '#ffffff';
-      ctx.font = '800 52px Inter, sans-serif';
-      ctx.fillText('Capodanno 2026/2027', 60, 162);
-
-      ctx.fillStyle = '#fbbf24';
-      ctx.font = '800 40px Inter, sans-serif';
-      ctx.fillText('Confronto Ufficiale 12 Case & Ville', 60, 218);
-
-      // Subtitle
-      ctx.fillStyle = '#cbd5e1';
-      ctx.font = '600 23px Inter, sans-serif';
-      ctx.fillText(`Calcolato su ${state.guests} persone e ${state.cars} auto • Camere, Divani Letto, Bagni, Caselli & Vignetta CH`, 60, 266);
-
-      // 3 Highlight Cards inside the Preview Image
-      const cards = [
-        {
-          badge: '📍 SEZIONE 1 • LAGO DI COMO (4)',
-          title: 'Como & Bellagio',
-          line1: '1° TheLuxe 9.8/10 (€1.518 🔒)',
-          line2: 'Volta 9.4 • Bellagio 9.2 • Vicolo 8.6',
-          bg: 'rgba(16, 185, 129, 0.25)',
-          border: '#34d399'
-        },
-        {
-          badge: '🌍 SEZIONE 2 • ITALIA & FRANCIA (6)',
-          title: 'Ville & Loft Top',
-          line1: '1° Villa Lyon Ouest 9.8/10 (€1.771)',
-          line2: 'Arona 9.2 • Annecy 9.1 • Chiavari • Nizza',
-          bg: 'rgba(79, 70, 229, 0.30)',
-          border: '#818cf8'
-        },
-        {
-          badge: '🇨🇭 SVIZZERA CON VIGNETTA (2)',
-          title: 'Locarno & Brissago',
-          line1: 'Schloss 9.3/10 • Venus 9.2/10',
-          line2: `Vignetta €43×${state.cars} auto = +€${43 * state.cars}`,
-          bg: 'rgba(225, 29, 72, 0.30)',
-          border: '#fb7185'
-        }
-      ];
-
-      cards.forEach((c, i) => {
-        const x = 60 + i * 370;
-        const y = 310;
-        const w = 340;
-        const h = 200;
-
-        ctx.fillStyle = c.bg;
-        ctx.strokeStyle = c.border;
-        ctx.lineWidth = 2.5;
-        ctx.beginPath();
-        if (ctx.roundRect) {
-          ctx.roundRect(x, y, w, h, 20);
-        } else {
-          ctx.rect(x, y, w, h);
-        }
-        ctx.fill();
-        ctx.stroke();
-
-        ctx.fillStyle = c.border;
-        ctx.font = 'bold 15px Inter, sans-serif';
-        ctx.fillText(c.badge, x + 20, y + 38);
-
-        ctx.fillStyle = '#ffffff';
-        ctx.font = '800 30px Inter, sans-serif';
-        ctx.fillText(c.title, x + 20, y + 84);
-
-        ctx.fillStyle = '#f1f5f9';
-        ctx.font = '700 19px Inter, sans-serif';
-        ctx.fillText(c.line1, x + 20, y + 128);
-
-        ctx.fillStyle = '#cbd5e1';
-        ctx.font = '500 17px Inter, sans-serif';
-        ctx.fillText(c.line2, x + 20, y + 162);
-      });
-
-      // Bottom Footer Strip
-      ctx.fillStyle = 'rgba(15, 23, 42, 0.88)';
-      ctx.fillRect(0, 548, W, 82);
-
-      ctx.fillStyle = '#38bdf8';
-      ctx.font = 'bold 22px Inter, sans-serif';
-      ctx.fillText('📸 Link diretti alle foto ufficiali su Booking.com  •  📊 Confronto Prezzi & Viaggio da Torino', 60, 597);
-    }
-
-    function openSharePreviewModal() {
-      drawSocialPreviewCanvas();
-      document.getElementById('sharePreviewModal').classList.remove('hidden');
-    }
-
-    function closeSharePreviewModal() {
-      document.getElementById('sharePreviewModal').classList.add('hidden');
-    }
-
-    function showShareFeedback(msg) {
-      const banner = document.getElementById('shareFeedbackBanner');
-      if (!banner) return;
-      banner.textContent = msg;
-      banner.classList.remove('hidden');
-      setTimeout(() => banner.classList.add('hidden'), 4500);
-    }
-
-    function getShareSummaryText() {
-      const comoList = getFilteredAndSorted('como');
-      const otherList = getFilteredAndSorted('other');
-      const comoTop = comoList[0];
-      const otherTop = otherList[0];
-      const comoCost = comoTop ? calculatePropertyCosts(comoTop) : null;
-      const otherCost = otherTop ? calculatePropertyCosts(otherTop) : null;
-
-      return [
-        `🎆 *CAPODANNO 2026/2027 – CONFRONTO 12 CASE & VILLE*`,
-        `📅 31 Dicembre 2026 – 2 Gennaio 2027 (${state.guests} persone, ${state.cars} auto da Torino)`,
-        ``,
-        `📍 *Sezione 1: Como e Lago di Como (4 case)*`,
-        comoTop ? `🔒 1° *${comoTop.name}* (${comoTop.ratingDisplay}) – Alloggio €1.518 → *${formatEuro(comoCost.perPersonSelectedGuests, 2)}/pers.* (Tot. ${formatEuro(comoCost.displayTotal, 0)} con viaggio)` : '',
-        `• Seguono: Volta Suites (9.4/10), Private villa near Bellagio (9.2/10), Il Vicolo (8.6/10)`,
-        ``,
-        `🌍 *Sezione 2: Svizzera 🇨🇭, Italia & Francia 🇫🇷 (8 case)*`,
-        otherTop ? `⭐ 1° *${otherTop.name}* (${otherTop.ratingDisplay}) – Alloggio €1.771 → *${formatEuro(otherCost.perPersonSelectedGuests, 2)}/pers.* (Tot. ${formatEuro(otherCost.displayTotal, 0)} con viaggio)` : '',
-        `• Svizzera 🇨🇭 (con Vignetta +€${43 * state.cars}): Schloss Locarno (9.3/10) e Residence Venus Garden Brissago (9.2/10)`,
-        `• Altre: Villa Lilia Arona (9.2/10), Villa Mareyland Annecy (9.1/10), Pet Friendly Chiavari (9.0/10), Loft Nizza (8.7/10), Villa Ida Alba (8.6/10)`
-      ].filter(Boolean).join('\n');
-    }
-
-    function downloadSocialPreviewPng() {
-      drawSocialPreviewCanvas();
-      const canvas = document.getElementById('socialPreviewCanvas');
-      const dataUrl = canvas.toDataURL('image/png');
-      const a = document.createElement('a');
-      a.href = dataUrl;
-      a.download = 'capodanno-2026-2027-anteprima-sito.png';
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-      showShareFeedback('✅ Immaginina PNG (1200×630) scaricata! Puoi allegarla direttamente su WhatsApp o Telegram.');
-    }
-
-    function copySummaryTextForChat() {
-      const text = getShareSummaryText();
-      const textarea = document.createElement('textarea');
-      textarea.value = text;
-      document.body.appendChild(textarea);
-      textarea.select();
-      document.execCommand('copy');
-      document.body.removeChild(textarea);
-      showShareFeedback('✅ Riepilogo copiato negli appunti! Incollalo su WhatsApp o Telegram.');
-    }
-
-    async function shareSiteWithImageCard() {
-      drawSocialPreviewCanvas();
-      const canvas = document.getElementById('socialPreviewCanvas');
-      const summaryText = getShareSummaryText();
-
-      try {
-        const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/png'));
-        const file = new File([blob], 'capodanno-2026-2027-card.png', { type: 'image/png' });
-
-        if (navigator.canShare && navigator.canShare({ files: [file] })) {
-          await navigator.share({
-            title: '🎆 Capodanno 2026/2027 – Confronto 12 Case & Ville',
-            text: summaryText,
-            files: [file]
-          });
-          showShareFeedback('✅ Condivisione con Immaginina avviata!');
-          return;
-        } else if (navigator.share) {
-          await navigator.share({
-            title: '🎆 Capodanno 2026/2027 – Confronto 12 Case & Ville',
-            text: summaryText,
-            url: window.location.href
-          });
-          showShareFeedback('✅ Finestra di condivisione aperta!');
-          return;
-        }
-      } catch (err) {
-        // Fallback if user cancels or browser blocks native share
-      }
-
-      copySummaryTextForChat();
-      downloadSocialPreviewPng();
-    }
-
-    function renderComparisonTable() {
-      const container = document.getElementById('comparisonContent');
-      const selectedProps = state.compareIds.map(id => properties.find(p => p.id === id)).filter(Boolean);
-
-      if (selectedProps.length === 0) {
-        container.innerHTML = `
-          <div class="text-center py-12">
-            <p class="text-slate-500 font-semibold">Nessuna casa selezionata per il confronto.</p>
-            <p class="text-xs text-slate-400 mt-1">Clicca sul pulsante "⚖️ Aggiungi a Confronto" su qualsiasi scheda per confrontarle qui fianco a fianco.</p>
+    function createCardHtml(p) {
+      return `
+        <div class="bg-white rounded-xl border p-5 shadow-sm space-y-3">
+          <div class="flex justify-between items-start">
+            <h3 class="font-extrabold text-lg">${p.name}</h3>
+            <span class="px-2.5 py-1 rounded-lg bg-emerald-100 text-emerald-800 text-xs font-bold">⭐ ${p.ratingDisplay}</span>
           </div>
-        `;
-        return;
-      }
-
-      container.innerHTML = `
-        <div class="overflow-x-auto">
-          <table class="w-full text-left border-collapse text-xs sm:text-sm">
-            <thead>
-              <tr class="border-b-2 border-slate-200">
-                <th class="p-3 bg-slate-50 font-extrabold text-slate-600 w-44">Caratteristica</th>
-                ${selectedProps.map(p => `
-                  <th class="p-3 bg-slate-50 min-w-[210px]">
-                    <div class="flex items-start justify-between gap-2">
-                      <div>
-                        <span class="text-[10px] font-bold uppercase text-indigo-600 block">${p.location}</span>
-                        <span class="font-extrabold text-slate-900 text-sm">${p.name}</span>
-                      </div>
-                      <button onclick="toggleCompare(${p.id}); renderComparisonTable();" class="text-slate-400 hover:text-red-600 font-bold">✕</button>
-                    </div>
-                  </th>
-                `).join('')}
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-slate-200">
-              <tr>
-                <td class="p-3 font-bold text-slate-700 bg-slate-50/60">⭐ Valutazione</td>
-                ${selectedProps.map(p => `<td class="p-3 font-extrabold text-indigo-700">${p.ratingDisplay}</td>`).join('')}
-              </tr>
-              <tr>
-                <td class="p-3 font-bold text-slate-700 bg-slate-50/60">🏢 N. Appartamenti</td>
-                ${selectedProps.map(p => `<td class="p-3 font-semibold">${p.apartmentsCount}</td>`).join('')}
-              </tr>
-              <tr>
-                <td class="p-3 font-bold text-slate-700 bg-slate-50/60">🛏️ N. Camere</td>
-                ${selectedProps.map(p => `<td class="p-3 font-bold text-slate-900">${p.bedroomsCount}</td>`).join('')}
-              </tr>
-              <tr>
-                <td class="p-3 font-bold text-slate-700 bg-slate-50/60">🛋️ Letti & Divani Letto</td>
-                ${selectedProps.map(p => `
-                  <td class="p-3">
-                    <span class="font-semibold block">${p.bedsDetail}</span>
-                    <span class="inline-block mt-1 px-2 py-0.5 rounded text-[11px] font-bold ${p.sofaBedsCount === 0 ? 'bg-emerald-100 text-emerald-800' : 'bg-amber-100 text-amber-900'}">Divani letto: ${p.sofaBedsLabel}</span>
-                  </td>
-                `).join('')}
-              </tr>
-              <tr>
-                <td class="p-3 font-bold text-slate-700 bg-slate-50/60">🚿 N. Bagni</td>
-                ${selectedProps.map(p => `<td class="p-3 font-semibold">${p.bathroomsCount}</td>`).join('')}
-              </tr>
-              <tr>
-                <td class="p-3 font-bold text-slate-700 bg-slate-50/60">🛋️ N. Soggiorni</td>
-                ${selectedProps.map(p => `<td class="p-3">${p.livingRoomsCount}</td>`).join('')}
-              </tr>
-              <tr>
-                <td class="p-3 font-bold text-slate-700 bg-slate-50/60">🚗 Distanza A/R da Torino</td>
-                ${selectedProps.map(p => `<td class="p-3 font-bold">${p.distanceRoundTripKm} km A/R</td>`).join('')}
-              </tr>
-              <tr>
-                <td class="p-3 font-bold text-slate-700 bg-slate-50/60">🛣️ Benzina + Caselli (${state.cars} auto)</td>
-                ${selectedProps.map(p => {
-                  const c = calculatePropertyCosts(p);
-                  return `<td class="p-3">Benzina: <strong>${formatEuro(c.fuelTotal, 2)}</strong> + Caselli: <strong>${formatEuro(c.tollsTotal, 2)}</strong> ${c.swissActive ? `<br><span class="text-red-600 font-bold">+ Vignetta 🇨🇭 €${c.swissTotal}</span>` : ''}</td>`;
-                }).join('')}
-              </tr>
-              <tr class="bg-indigo-50/60">
-                <td class="p-3 font-extrabold text-indigo-950">💶 Prezzo Totale & A Persona (÷ ${state.guests})</td>
-                ${selectedProps.map(p => {
-                  const c = calculatePropertyCosts(p);
-                  return p.available ? `
-                    <td class="p-3">
-                      <span class="text-lg font-extrabold text-indigo-700 block">${formatEuro(c.perPersonSelectedGuests, 2)} / persona</span>
-                      <span class="text-xs text-slate-600 font-bold">Totale: ${formatEuro(c.displayTotal, 0)}</span>
-                    </td>
-                  ` : `<td class="p-3 font-bold text-red-600">NON DISPONIBILE</td>`;
-                }).join('')}
-              </tr>
-              <tr>
-                <td class="p-3 font-bold text-slate-700 bg-slate-50/60">📸 Foto & Link Prenotazione</td>
-                ${selectedProps.map(p => `
-                  <td class="p-3">
-                    <a href="${p.bookingUrl}" target="_blank" rel="noopener noreferrer"
-                       class="inline-block px-3 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs">
-                      📸 Vedi foto su ${p.platform} ↗
-                    </a>
-                  </td>
-                `).join('')}
-              </tr>
-            </tbody>
-          </table>
+          <p class="text-xs text-slate-600">📍 ${p.location}</p>
+          <div class="bg-indigo-50 p-2.5 rounded-lg text-xs space-y-1">
+            <div>🏢 <strong>Unità:</strong> ${p.apartmentsCount}</div>
+            <div>🛏️ <strong>Letti:</strong> ${p.bedsDetail}</div>
+            <div>🚿 <strong>Bagni:</strong> ${p.bathroomsCount}</div>
+          </div>
+          <div class="flex items-center justify-between pt-2">
+            <span class="text-lg font-extrabold text-indigo-700">€ ${p.priceAccommodation}</span>
+            <a href="${p.bookingUrl}" target="_blank" class="px-4 py-2 bg-indigo-600 text-white rounded-lg text-xs font-bold hover:bg-indigo-500">📸 Foto & Annuncio ↗</a>
+          </div>
         </div>
       `;
     }
 
-    // Master Render
-    function renderAll() {
-      const comoProps = getFilteredAndSorted('como');
-      const otherProps = getFilteredAndSorted('other');
-
-      const comoSection = document.getElementById('section-como');
-      const otherSection = document.getElementById('section-other');
-
-      document.getElementById('comoCountBadge').textContent = `${comoProps.length} strutture`;
-      document.getElementById('otherCountBadge').textContent = `${otherProps.length} strutture`;
-      document.getElementById('compareCountBadge').textContent = state.compareIds.length;
-
-      comoSection.style.display = (state.filter === 'other' || state.filter === 'swiss') ? 'none' : 'block';
-      otherSection.style.display = (state.filter === 'como') ? 'none' : 'block';
-
-      const comoGrid = document.getElementById('comoGrid');
-      const otherGrid = document.getElementById('otherGrid');
-
-      comoGrid.innerHTML = comoProps.length
-        ? comoProps.map((p, idx) => renderPropertyCard(p, idx)).join('')
-        : `<div class="col-span-full bg-white rounded-2xl p-8 text-center border border-slate-200 text-slate-500">Nessuna struttura a Como corrisponde ai filtri selezionati.</div>`;
-
-      otherGrid.innerHTML = otherProps.length
-        ? otherProps.map((p, idx) => renderPropertyCard(p, idx)).join('')
-        : `<div class="col-span-full bg-white rounded-2xl p-8 text-center border border-slate-200 text-slate-500">Nessuna struttura nelle altre destinazioni corrisponde ai filtri selezionati.</div>`;
-
-      renderFullSummaryTable();
-      drawSocialPreviewCanvas();
-    }
-
-    // Initialize immediately + on DOMContentLoaded
-    function initApp() {
+    // Avvio sicuro al caricamento completo del DOM
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', () => {
+        loadProperties();
+        renderAll();
+      });
+    } else {
       loadProperties();
       renderAll();
-    }
-
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', initApp);
-    } else {
-      initApp();
     }
   </script>
 </body>
