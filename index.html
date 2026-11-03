@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-  <title>Capodanno 2026/2027 — Confronto 13 Case & Ville</title>
-  <meta name="description" content="Dashboard interattiva 13 case Capodanno 2026/2027 (31 Dic – 2 Gen): Como (4) e Altre Destinazioni (9). Prezzi, km da Torino, caselli, benzina e Vignetta Svizzera per 3 auto." />
+  <title>Capodanno 2026/2027 — Confronto 15 Case & Ville</title>
+  <meta name="description" content="Dashboard interattiva 15 case Capodanno 2026/2027 (31 Dic – 2 Gen): Como (4) e Altre Destinazioni (11, incluse 4 in Svizzera). Prezzi, km da Torino, caselli, benzina e Vignetta Svizzera per 3 auto." />
   <meta name="theme-color" content="#0f172a" />
 
   <!-- FAVICON SVG -->
@@ -12,9 +12,9 @@
 
   <!-- OPEN GRAPH / WHATSAPP PREVIEW -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="🎆 Capodanno 2026/2027 – Confronto 13 Case & Ville" />
-  <meta property="og:description" content="📍 4 a Como + 9 tra Svizzera 🇨🇭, Italia e Francia 🇫🇷 • 🚗 Calcolo preciso 3 Auto da Torino (Km A/R, Caselli, Benzina, Vignetta CH) • 🛏️ Camere, Bagni e Divani Letto." />
-  <meta property="og:image" content="https://placehold.co/1200x630/0f172a/ffffff.png?text=Capodanno+2026%2F2027+%E2%80%A2+13+Case+%26+Ville%0AComo+%284%29+%E2%80%A2+Svizzera%2C+Italia+%26+Francia+%289%29" />
+  <meta property="og:title" content="🎆 Capodanno 2026/2027 – Confronto 15 Case & Ville" />
+  <meta property="og:description" content="📍 4 a Como + 11 tra Svizzera 🇨🇭 (Lugano, Locarno, Brissago), Italia e Francia 🇫🇷 • 🚗 Calcolo preciso 3 Auto da Torino (Km A/R, Caselli, Benzina, Vignetta CH) • 🛏️ Camere, Bagni e Divani Letto." />
+  <meta property="og:image" content="https://placehold.co/1200x630/0f172a/ffffff.png?text=Capodanno+2026%2F2027+%E2%80%A2+15+Case+%26+Ville%0AComo+%284%29+%E2%80%A2+Svizzera%2C+Italia+%26+Francia+%2811%29" />
   <meta name="twitter:card" content="summary_large_image" />
 
   <script src="https://cdn.tailwindcss.com"></script>
@@ -54,9 +54,11 @@
           <span>Da Torino</span>
           <span>•</span>
           <span class="text-emerald-400">🔒 2 Case Bloccate</span>
+          <span>•</span>
+          <span class="text-red-400">🇨🇭 4 in Svizzera</span>
         </div>
         <h1 class="text-lg sm:text-2xl font-extrabold tracking-tight text-white">
-          Capodanno 2026/2027 — 13 Case a Confronto
+          Capodanno 2026/2027 — 15 Case a Confronto
         </h1>
       </div>
 
@@ -84,11 +86,11 @@
       <div class="flex items-center justify-between gap-2">
         <!-- Filtri rapidi a scorrimento orizzontale -->
         <div class="flex items-center gap-1 overflow-x-auto no-scrollbar py-0.5">
-          <button onclick="setFilter('all')" id="filter-all" class="filter-btn px-2.5 py-1 rounded-lg text-[11px] font-bold whitespace-nowrap bg-slate-900 text-white">Tutte (13)</button>
+          <button onclick="setFilter('all')" id="filter-all" class="filter-btn px-2.5 py-1 rounded-lg text-[11px] font-bold whitespace-nowrap bg-slate-900 text-white">Tutte (15)</button>
           <button onclick="setFilter('como')" id="filter-como" class="filter-btn px-2.5 py-1 rounded-lg text-[11px] font-bold whitespace-nowrap bg-slate-100 text-slate-700">📍 Como (4)</button>
-          <button onclick="setFilter('other')" id="filter-other" class="filter-btn px-2.5 py-1 rounded-lg text-[11px] font-bold whitespace-nowrap bg-slate-100 text-slate-700">🌍 Altre (9)</button>
+          <button onclick="setFilter('other')" id="filter-other" class="filter-btn px-2.5 py-1 rounded-lg text-[11px] font-bold whitespace-nowrap bg-slate-100 text-slate-700">🌍 Altre (11)</button>
           <button onclick="setFilter('blocked')" id="filter-blocked" class="filter-btn px-2.5 py-1 rounded-lg text-[11px] font-bold whitespace-nowrap bg-emerald-50 text-emerald-800 border border-emerald-200">🔒 Bloccate (2)</button>
-          <button onclick="setFilter('swiss')" id="filter-swiss" class="filter-btn px-2.5 py-1 rounded-lg text-[11px] font-bold whitespace-nowrap bg-red-50 text-red-700 border border-red-200">🇨🇭 Svizzera (2)</button>
+          <button onclick="setFilter('swiss')" id="filter-swiss" class="filter-btn px-2.5 py-1 rounded-lg text-[11px] font-bold whitespace-nowrap bg-red-50 text-red-700 border border-red-200">🇨🇭 Svizzera (4)</button>
           <button onclick="setFilter('no-sofa')" id="filter-no-sofa" class="filter-btn px-2.5 py-1 rounded-lg text-[11px] font-bold whitespace-nowrap bg-slate-100 text-slate-700">🛏️ 0 Divani (8)</button>
         </div>
 
@@ -164,15 +166,15 @@
       <div id="comoGrid" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
     </section>
 
-    <!-- SEZIONE 2: ALTRE DESTINAZIONI (9) -->
+    <!-- SEZIONE 2: ALTRE DESTINAZIONI (11) -->
     <section id="section-other" class="scroll-mt-16">
       <div class="flex items-center justify-between border-b-2 border-amber-500 pb-2 mb-4">
         <div class="flex items-center gap-2">
           <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
           <h2 class="text-base sm:text-xl font-extrabold text-slate-900">2. Altre Destinazioni (Svizzera 🇨🇭, Italia, Francia 🇫🇷)</h2>
-          <span id="otherCountBadge" class="px-2 py-0.5 rounded-full bg-amber-100 text-amber-900 font-extrabold text-[11px]">9</span>
+          <span id="otherCountBadge" class="px-2 py-0.5 rounded-full bg-amber-100 text-amber-900 font-extrabold text-[11px]">11</span>
         </div>
-        <span class="text-[11px] text-red-600 font-bold hidden sm:inline">🇨🇭 Vignetta +€43/auto solo in Svizzera</span>
+        <span class="text-[11px] text-red-600 font-bold hidden sm:inline">🇨🇭 Vignetta +€43/auto sulle 4 case in Svizzera (Lugano, Locarno, Brissago)</span>
       </div>
       <div id="otherGrid" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
     </section>
@@ -181,7 +183,7 @@
     <section id="section-summary-table" class="scroll-mt-16 pt-2">
       <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
         <div class="px-4 py-3 bg-slate-900 text-white flex items-center justify-between">
-          <h2 class="font-extrabold text-xs sm:text-sm">📋 Tabella Riepilogativa (Tutte le 13 Case)</h2>
+          <h2 class="font-extrabold text-xs sm:text-sm">📋 Tabella Riepilogativa (Tutte le 15 Case)</h2>
           <span class="text-[11px] text-indigo-300 font-bold" id="tableHeaderMeta">10 persone • 3 auto</span>
         </div>
         <div class="overflow-x-auto">
@@ -343,7 +345,7 @@
 
   <!-- SCRIPT -->
   <script>
-    const STORAGE_KEY = 'capodanno_2026_13case_designer_v5';
+    const STORAGE_KEY = 'capodanno_2026_15case_designer_v6';
 
     const state = {
       guests: 10,
@@ -353,7 +355,7 @@
       filter: 'all',
       search: '',
       sortBy: 'rating-desc',
-      compareIds: [1, 5, 6, 13],
+      compareIds: [1, 5, 14, 15],
       drawerOpen: false
     };
 
@@ -476,7 +478,7 @@
         bookingUrl: "https://www.booking.com/Share-7Qp8JE"
       },
 
-      // SEZIONE 2: ALTRE DESTINAZIONI (9)
+      // SEZIONE 2: ALTRE DESTINAZIONI (11)
       {
         id: 5,
         sheetNumber: "#1 Altre",
@@ -649,11 +651,69 @@
         tollsPerCar: 28.00,
         cancellation: "Bloccato – Canc. gratuita prima del 25 dic",
         hasFreeCancel: true,
-        bookingUrl: "https://www.booking.com/Share-veZmq2"
+        bookingUrl: "https://www.booking.com/Share-vB1Sh4"
+      },
+      {
+        id: 15,
+        sheetNumber: "#7 Altre (CH)",
+        name: "Regalia Suites - Free parking",
+        group: "other",
+        location: "Via agli Orti 10, 6965 Lugano, Svizzera 🇨🇭",
+        isSwitzerland: true,
+        isBlocked: false,
+        ratingNormalized: 9.0,
+        ratingDisplay: "9.0/10 (Lugano)",
+        priceAccommodation: 1534.00,
+        guestsCapacity: "10 adulti",
+        maxGuests: 10,
+        apartmentsCount: "3 appartamenti (Suites)",
+        bedroomsCount: "3 camere",
+        bedsDetail: "3 camere da letto + 3 divani letto",
+        sofaBedsCount: 3,
+        sofaBedsLabel: "3 divani letto",
+        bathroomsCount: "3 bagni",
+        livingRoomsCount: "3 soggiorni",
+        distanceOneWayKm: 208,
+        distanceRoundTripKm: 416,
+        driveTimeOneWay: "2h 20m",
+        fuelPerCar: 52.00,
+        tollsPerCar: 38.00,
+        cancellation: "Canc. gratuita fino al 17 dic",
+        hasFreeCancel: true,
+        bookingUrl: "https://www.booking.com/Share-HPIqvQ"
+      },
+      {
+        id: 14,
+        sheetNumber: "#8 Altre (CH)",
+        name: "Lugano superior Suites – Free Parking",
+        group: "other",
+        location: "46 Via Trevano, 6900 Lugano, Svizzera 🇨🇭",
+        isSwitzerland: true,
+        isBlocked: false,
+        ratingNormalized: 9.0,
+        ratingDisplay: "9.0/10 (Lugano)",
+        priceAccommodation: 1595.00,
+        guestsCapacity: "10 adulti",
+        maxGuests: 10,
+        apartmentsCount: "3 appartamenti (Suites)",
+        bedroomsCount: "3 camere",
+        bedsDetail: "3 camere da letto + 3 divani letto",
+        sofaBedsCount: 3,
+        sofaBedsLabel: "3 divani letto",
+        bathroomsCount: "3 bagni",
+        livingRoomsCount: "3 soggiorni",
+        distanceOneWayKm: 208,
+        distanceRoundTripKm: 416,
+        driveTimeOneWay: "2h 20m",
+        fuelPerCar: 52.00,
+        tollsPerCar: 38.00,
+        cancellation: "Canc. gratuita fino al 17 dic",
+        hasFreeCancel: true,
+        bookingUrl: "https://www.booking.com/Share-HPIqvQ"
       },
       {
         id: 10,
-        sheetNumber: "#7 Altre",
+        sheetNumber: "#9 Altre",
         name: "Pet Friendly Home In Chiavari",
         group: "other",
         location: "Chiavari (GE), Liguria",
@@ -682,7 +742,7 @@
       },
       {
         id: 11,
-        sheetNumber: "#8 Altre",
+        sheetNumber: "#10 Altre",
         name: "Loft spacieux avec terrasse",
         group: "other",
         location: "20 Rue Vernier, Nizza 🇫🇷",
@@ -711,7 +771,7 @@
       },
       {
         id: 12,
-        sheetNumber: "#9 Altre",
+        sheetNumber: "#11 Altre",
         name: "Villa Ida",
         group: "other",
         location: "Fraz. Castelrotto 12, Guarene/Alba (CN)",
@@ -1240,11 +1300,11 @@
 
       ctx.fillStyle = '#fbbf24';
       ctx.font = '800 42px sans-serif';
-      ctx.fillText('Confronto 13 Case & Ville (Como, Svizzera, Italia, Francia)', 60, 250);
+      ctx.fillText('Confronto 15 Case & Ville (Como, Svizzera, Italia, Francia)', 60, 250);
 
       ctx.fillStyle = '#cbd5e1';
       ctx.font = '600 26px sans-serif';
-      ctx.fillText('📍 4 a Como (TheLuxe Bloccata) + 9 Altre (Shelly Lerici Bloccata, Lione, Locarno, Arona...)', 60, 340);
+      ctx.fillText('📍 4 a Como + 11 Altre (Lugano, Locarno, Brissago, Lerici, Lione, Arona...)', 60, 340);
       ctx.fillText('🚗 Km A/R, Stima Caselli, Benzina e Vignetta Svizzera (+43€/auto) calcolati al centesimo', 60, 390);
       ctx.fillText('🛏️ Numero Camere, Tipologia Letti, Divani Letto, Bagni e Soggiorni evidenziati', 60, 440);
     }
@@ -1269,8 +1329,8 @@
     function shareSiteWithImageCard() {
       if (navigator.share) {
         navigator.share({
-          title: '🎆 Capodanno 2026/2027 – Confronto 13 Case',
-          text: 'Confronto interattivo delle 13 case per Capodanno con prezzi, caselli, km e letti!',
+          title: '🎆 Capodanno 2026/2027 – Confronto 15 Case',
+          text: 'Confronto interattivo delle 15 case per Capodanno con prezzi, caselli, km e letti!',
           url: window.location.href
         });
       } else {
